@@ -1,0 +1,6 @@
+.DS_Store
+intloc/pycache
+__pycache__
+integrator_report.csv
+cropped_sequences.fasta
+.vscode

@@ -1,0 +1,16 @@
+read_dir_test_mixed
+SimTestData_yeast_pmaxGFP-N1_intx10_v2_30xCov_P6C4_IntCandReads.fasta.*
+YeastRefGenome_GCF_000146045.2_R64_genomic.fna.*
+real_cho_test_data
+Integration_candidate_reads_20220208_10x_001_002.*
+*.fasta/
+# *.csv
+*.ndb
+*.nhr
+*.nin
+*.nog
+*.nos
+*.not
+*.nsq
+*.ntf
+*.nto

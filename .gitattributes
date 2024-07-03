@@ -1,0 +1,6 @@
+# exclude images folder from linguist language statistics
+README.md linguist-documentation
+images/** linguist-documentation
+images/intra_human_preex_ideogram_mod.svg -linguist-detectable
+images/Integration_summary_report_Yeast.html -linguist-detectable
+images/Yeast_map_fig_NC_001135.5_105077.html -linguist-detectable

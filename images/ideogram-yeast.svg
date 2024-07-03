@@ -1,0 +1,469 @@
+<?xml version="1.0"?>
+<svg height="320" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <desc>Ideogram SVG</desc>
+  <style>
+    .int_txt {
+      display: inline;
+      text-align: center;
+      color: none;
+      opacity: 0
+    }
+    .Integration:hover {
+      fill: red;
+      color: red;
+      pointer-events: visibleFill;
+    }
+    .Integration:hover ~ .int_txt {
+      fill: black;
+      color: black;
+      pointer-events: visibleFill;
+      opacity: 1
+    }
+  </style>
+  <defs>
+    <linearGradient id="arm">
+      <stop offset="0" stop-color="rgb(102,102,102)" stop-opacity="1"/>
+      <stop offset="0.125" stop-color="rgb(195,195,195)" stop-opacity="1"/>
+      <stop offset="0.625" stop-color="rgb(136,136,136)" stop-opacity="1"/>
+      <stop offset="1" stop-color="rgb(102,102,102)" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="gneg">
+      <stop offset="0" stop-color="rgb(191,191,191)" stop-opacity="1"/>
+      <stop offset="0.125" stop-color="rgb(255,255,255)" stop-opacity="1"/>
+      <stop offset="0.625" stop-color="rgb(255,255,255)" stop-opacity="1"/>
+      <stop offset="1" stop-color="rgb(191,191,191)" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="gpos-100">
+      <stop offset="0" stop-color="rgb(0,0,0)" stop-opacity="1"/>
+      <stop offset="0.125" stop-color="rgb(127,127,127)" stop-opacity="1"/>
+      <stop offset="0.625" stop-color="rgb(0,0,0)" stop-opacity="1"/>
+      <stop offset="1" stop-color="rgb(0,0,0)" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="gpos-33">
+      <stop offset="0" stop-color="rgb(127,127,127)" stop-opacity="1"/>
+      <stop offset="0.125" stop-color="rgb(212,212,212)" stop-opacity="1"/>
+      <stop offset="0.625" stop-color="rgb(170,170,170)" stop-opacity="1"/>
+      <stop offset="1" stop-color="rgb(127,127,127)" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="gpos-66">
+      <stop offset="0" stop-color="rgb(76,76,76)" stop-opacity="1"/>
+      <stop offset="0.125" stop-color="rgb(178,178,178)" stop-opacity="1"/>
+      <stop offset="0.625" stop-color="rgb(102,102,102)" stop-opacity="1"/>
+      <stop offset="1" stop-color="rgb(76,76,76)" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="gpos-75">
+      <stop offset="0" stop-color="rgb(51,51,51)" stop-opacity="1"/>
+      <stop offset="0.125" stop-color="rgb(161,161,161)" stop-opacity="1"/>
+      <stop offset="0.625" stop-color="rgb(68,68,68)" stop-opacity="1"/>
+      <stop offset="1" stop-color="rgb(51,51,51)" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="acen">
+      <stop offset="0" stop-color="rgb(191,146,146)" stop-opacity="1"/>
+      <stop offset="0.125" stop-color="rgb(255,163,163)" stop-opacity="1"/>
+      <stop offset="0.625" stop-color="rgb(255,192,192)" stop-opacity="1"/>
+      <stop offset="1" stop-color="rgb(191,146,146)" stop-opacity="1"/>
+    </linearGradient>"
+  </defs>
+  <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+    <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+      <g transform="translate(20,20),matrix(1 0 0 1 0 16)">
+        <clipPath id="ideo_4">
+          <path id="ideo_3" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,46.0436 C12,48.0436 9,51.0436 6 51.0436 C3,51.0436 0,48.0436 0,46.0436 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+        </clipPath>
+        <g transform="translate(24,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">1</text>
+          </g>
+          <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+              <use href="url(#ideo_3)"/>
+              <g clip-path="url(#ideo_4)">
+                <rect fill="url(#arm)" height="66.0436" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="30.293"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+          </g>
+        </g>
+        <clipPath id="ideo_6">
+          <path id="ideo_5" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,162.6368 C12,164.6368 9,167.6368 6 167.6368 C3,167.6368 0,164.6368 0,162.6368 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+        </clipPath>
+        <g transform="translate(48,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">2</text>
+          </g>
+          <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+              <use href="url(#ideo_5)"/>
+              <g clip-path="url(#ideo_6)">
+                <rect fill="url(#arm)" height="182.6368" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="47.6414"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+          </g>
+        </g>
+        <clipPath id="ideo_8">
+          <path id="ideo_7" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,63.324 C12,65.324 9,68.324 6 68.324 C3,68.324 0,65.324 0,63.324 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+        </clipPath>
+        <g transform="translate(72,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">3</text>
+          </g>
+          <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+              <use href="url(#ideo_7)"/>
+              <g clip-path="url(#ideo_8)">
+                <rect fill="url(#arm)" height="83.324" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="22.877"/>
+              </g>
+              <g>
+                <rect fill="lime" class="Integration" height="1.6302476470588234" stroke="none" width="12" x="0" y="43.6466"/>
+                <text class="int_txt" fill="black" text-decoration="underline" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="160" font-weight="bold" >Int.1</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="175" >Name: NC_001135.5_218233</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="190" >Chrom: 3</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="205" >Contig: NC_001135.5</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="220" >Position [bp]: 218233</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="235" >Features: gene (protein_coding)   THR4</text>
+              </g>
+              <g>
+                <rect fill="lime" class="Integration" height="1.6302476470588234" stroke="none" width="12" x="0" y="2.7546"/>
+                <text class="int_txt" fill="black" text-decoration="underline" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="160" font-weight="bold" >Int.2</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="175" >Name: NC_001135.5_13773</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="190" >Chrom: 3</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="205" >Contig: NC_001135.5</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="220" >Position [bp]: 13773</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="235" >Features: gene (protein_coding)   HMLALPHA1</text>
+              </g>
+              <g>
+                <rect fill="lime" class="Integration" height="1.6302476470588234" stroke="none" width="12" x="0" y="30.3922"/>
+                <text class="int_txt" fill="black" text-decoration="underline" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="160" font-weight="bold" >Int.3</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="175" >Name: NC_001135.5_151961</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="190" >Chrom: 3</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="205" >Contig: NC_001135.5</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="220" >Position [bp]: 151961</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="235" >Features: no feature reported</text>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+          </g>
+        </g>
+        <clipPath id="ideo_10">
+          <path id="ideo_9" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,306.3866 C12,308.3866 9,311.3866 6 311.3866 C3,311.3866 0,308.3866 0,306.3866 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+        </clipPath>
+        <g transform="translate(96,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">4</text>
+          </g>
+          <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+              <use href="url(#ideo_9)"/>
+              <g clip-path="url(#ideo_10)">
+                <rect fill="url(#arm)" height="326.3866" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="89.9422"/>
+              </g>
+              <g>
+                <rect fill="lime" class="Integration" height="1.6302476470588234" stroke="none" width="12" x="0" y="107.4574"/>
+                <text class="int_txt" fill="black" text-decoration="underline" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="34" y="160" font-weight="bold" >Int.4</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="34" y="175" >Name: NC_001136.10_537287</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="34" y="190" >Chrom: 4</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="34" y="205" >Contig: NC_001136.10</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="34" y="220" >Position [bp]: 537287</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="34" y="235" >Features: gene (protein_coding)   ENA1</text>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+          </g>
+        </g>
+        <clipPath id="ideo_12">
+          <path id="ideo_11" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,115.3748 C12,117.3748 9,120.3748 6 120.3748 C3,120.3748 0,117.3748 0,115.3748 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+        </clipPath>
+        <g transform="translate(120,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">5</text>
+          </g>
+          <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+              <use href="url(#ideo_11)"/>
+              <g clip-path="url(#ideo_12)">
+                <rect fill="url(#arm)" height="135.3748" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="30.3974"/>
+              </g>
+              <g>
+                <rect fill="lime" class="Integration" height="1.6302476470588234" stroke="none" width="12" x="0" y="78.8278"/>
+                <text class="int_txt" fill="black" text-decoration="underline" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="10" y="160" font-weight="bold" >Int.5</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="10" y="175" >Name: NC_001137.3_394139</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="10" y="190" >Chrom: 5</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="10" y="205" >Contig: NC_001137.3</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="10" y="220" >Position [bp]: 394139</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="10" y="235" >Features: no feature reported</text>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+          </g>
+        </g>
+        <clipPath id="ideo_14">
+          <path id="ideo_13" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,54.0322 C12,56.0322 9,59.0322 6 59.0322 C3,59.0322 0,56.0322 0,54.0322 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+        </clipPath>
+        <g transform="translate(144,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">6</text>
+          </g>
+          <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+              <use href="url(#ideo_13)"/>
+              <g clip-path="url(#ideo_14)">
+                <rect fill="url(#arm)" height="74.0322" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="29.702"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+          </g>
+        </g>
+        <clipPath id="ideo_16">
+          <path id="ideo_15" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,218.188 C12,220.188 9,223.188 6 223.188 C3,223.188 0,220.188 0,218.188 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+        </clipPath>
+        <g transform="translate(168,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">7</text>
+          </g>
+          <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+              <use href="url(#ideo_15)"/>
+              <g clip-path="url(#ideo_16)">
+                <rect fill="url(#arm)" height="238.188" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="99.384"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+          </g>
+        </g>
+        <clipPath id="ideo_18">
+          <path id="ideo_17" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,112.5286 C12,114.5286 9,117.5286 6 117.5286 C3,117.5286 0,114.5286 0,112.5286 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+        </clipPath>
+        <g transform="translate(192,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">8</text>
+          </g>
+          <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+              <use href="url(#ideo_17)"/>
+              <g clip-path="url(#ideo_18)">
+                <rect fill="url(#arm)" height="132.52859999999998" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="21.1172"/>
+              </g>
+              <g>
+                <rect fill="lime" class="Integration" height="1.6302476470588234" stroke="none" width="12" x="0" y="45.664199999999994"/>
+                <text class="int_txt" fill="black" text-decoration="underline" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-62" y="160" font-weight="bold" >Int.6</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-62" y="175" >Name: NC_001140.6_228321</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-62" y="190" >Chrom: 8</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-62" y="205" >Contig: NC_001140.6</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-62" y="220" >Position [bp]: 228321</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-62" y="235" >Features: gene (protein_coding)   RRP3</text>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+          </g>
+        </g>
+        <clipPath id="ideo_20">
+          <path id="ideo_19" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,87.9776 C12,89.9776 9,92.9776 6 92.9776 C3,92.9776 0,89.9776 0,87.9776 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+        </clipPath>
+        <g transform="translate(216,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">9</text>
+          </g>
+          <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+              <use href="url(#ideo_19)"/>
+              <g clip-path="url(#ideo_20)">
+                <rect fill="url(#arm)" height="107.9776" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="71.1258"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+          </g>
+        </g>
+        <clipPath id="ideo_22">
+          <path id="ideo_21" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,149.1502 C12,151.1502 9,154.1502 6 154.1502 C3,154.1502 0,151.1502 0,149.1502 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+        </clipPath>
+        <g transform="translate(240,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">10</text>
+          </g>
+          <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+              <use href="url(#ideo_21)"/>
+              <g clip-path="url(#ideo_22)">
+                <rect fill="url(#arm)" height="169.1502" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="87.2614"/>
+              </g>
+              <g>
+                <rect fill="lime" class="Integration" height="1.6302476470588234" stroke="none" width="12" x="0" y="102.5686"/>
+                <text class="int_txt" fill="black" text-decoration="underline" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-110" y="160" font-weight="bold" >Int.7</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-110" y="175" >Name: NC_001142.9_512843</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-110" y="190" >Chrom: 10</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-110" y="205" >Contig: NC_001142.9</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-110" y="220" >Position [bp]: 512843</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-110" y="235" >Features: gene (protein_coding)   URB2</text>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+          </g>
+        </g>
+        <clipPath id="ideo_24">
+          <path id="ideo_23" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,133.3632 C12,135.3632 9,138.3632 6 138.3632 C3,138.3632 0,135.3632 0,133.3632 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+        </clipPath>
+        <g transform="translate(264,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">11</text>
+          </g>
+          <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+              <use href="url(#ideo_23)"/>
+              <g clip-path="url(#ideo_24)">
+                <rect fill="url(#arm)" height="153.3632" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="88.0258"/>
+              </g>
+              <g>
+                <rect fill="lime" class="Integration" height="1.6302476470588234" stroke="none" width="12" x="0" y="33.5936"/>
+                <text class="int_txt" fill="black" text-decoration="underline" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-134" y="160" font-weight="bold" >Int.8</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-134" y="175" >Name: NC_001143.9_167968</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-134" y="190" >Chrom: 11</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-134" y="205" >Contig: NC_001143.9</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-134" y="220" >Position [bp]: 167968</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-134" y="235" >Features: gene (protein_coding)   DBR1</text>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+          </g>
+        </g>
+        <clipPath id="ideo_26">
+          <path id="ideo_25" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,215.6354 C12,217.6354 9,220.6354 6 220.6354 C3,220.6354 0,217.6354 0,215.6354 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+        </clipPath>
+        <g transform="translate(288,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">12</text>
+          </g>
+          <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+              <use href="url(#ideo_25)"/>
+              <g clip-path="url(#ideo_26)">
+                <rect fill="url(#arm)" height="235.6354" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="30.1656"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+          </g>
+        </g>
+        <clipPath id="ideo_28">
+          <path id="ideo_27" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,184.8862 C12,186.8862 9,189.8862 6 189.8862 C3,189.8862 0,186.8862 0,184.8862 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+        </clipPath>
+        <g transform="translate(312,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">13</text>
+          </g>
+          <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+              <use href="url(#ideo_27)"/>
+              <g clip-path="url(#ideo_28)">
+                <rect fill="url(#arm)" height="204.8862" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="53.6062"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+          </g>
+        </g>
+        <clipPath id="ideo_30">
+          <path id="ideo_29" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,156.8666 C12,158.8666 9,161.8666 6 161.8666 C3,161.8666 0,158.8666 0,156.8666 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+        </clipPath>
+        <g transform="translate(336,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">14</text>
+          </g>
+          <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+              <use href="url(#ideo_29)"/>
+              <g clip-path="url(#ideo_30)">
+                <rect fill="url(#arm)" height="176.8666" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="125.7516"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+          </g>
+        </g>
+        <clipPath id="ideo_32">
+          <path id="ideo_31" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,218.2582 C12,220.2582 9,223.2582 6 223.2582 C3,223.2582 0,220.2582 0,218.2582 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+        </clipPath>
+        <g transform="translate(360,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">15</text>
+          </g>
+          <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+              <use href="url(#ideo_31)"/>
+              <g clip-path="url(#ideo_32)">
+                <rect fill="url(#arm)" height="238.2582" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="65.3168"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+          </g>
+        </g>
+        <clipPath id="ideo_34">
+          <path id="ideo_33" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,189.6132 C12,191.6132 9,194.6132 6 194.6132 C3,194.6132 0,191.6132 0,189.6132 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+        </clipPath>
+        <g transform="translate(384,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">16</text>
+          </g>
+          <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+              <use href="url(#ideo_33)"/>
+              <g clip-path="url(#ideo_34)">
+                <rect fill="url(#arm)" height="209.6132" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="111.1914"/>
+              </g>
+              <g>
+                <rect fill="lime" class="Integration" height="1.6302476470588234" stroke="none" width="12" x="0" y="13.1124"/>
+                <text class="int_txt" fill="black" text-decoration="underline" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-254" y="160" font-weight="bold" >Int.9</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-254" y="175" >Name: NC_001148.4_65562</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-254" y="190" >Chrom: 16</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-254" y="205" >Contig: NC_001148.4</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-254" y="220" >Position [bp]: 65562</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-254" y="235" >Features: gene (protein_coding)   CLN2</text>
+              </g>
+              <g>
+                <rect fill="lime" class="Integration" height="1.6302476470588234" stroke="none" width="12" x="0" y="78.2464"/>
+                <text class="int_txt" fill="black" text-decoration="underline" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-254" y="160" font-weight="bold" >Int.10</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-254" y="175" >Name: NC_001148.4_391232</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-254" y="190" >Chrom: 16</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-254" y="205" >Contig: NC_001148.4</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-254" y="220" >Position [bp]: 391232</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-254" y="235" >Features: gene (protein_coding)   SEC16</text>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+          </g>
+        </g>
+        <clipPath id="ideo_36">
+          <path id="ideo_35" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,17.1558 C12,19.1558 9,22.1558 6 22.1558 C3,22.1558 0,19.1558 0,17.1558 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+        </clipPath>
+        <g transform="translate(408,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">mito</text>
+          </g>
+          <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+              <use href="url(#ideo_35)"/>
+              <g clip-path="url(#ideo_36)">
+                <rect fill="url(#arm)" height="37.1558" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="200.0002"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

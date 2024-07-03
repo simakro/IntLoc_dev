@@ -1,0 +1,15 @@
+{
+    "modules": 
+        [
+        "il_chk_conv",
+        "il_report",
+        "il_get",
+        "il_asm_db_tools",
+        "il_classes",
+        "il_dumps",
+        "il_html",
+        "il_ava_clustering",
+        "il_evaluate",
+        "il_pdf"
+        ]
+}

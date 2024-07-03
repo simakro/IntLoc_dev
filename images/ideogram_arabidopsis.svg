@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<svg height="350" version="1.1" width="416" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <desc>Ideogram SVG</desc>
+  <style>
+    .int_txt {
+      display: inline;
+      text-align: center;
+      color: none;
+      opacity: 0
+    }
+    .Integration:hover {
+      fill: red;
+      color: red;
+      pointer-events: visibleFill;
+    }
+    .Integration:hover ~ .int_txt {
+      fill: black;
+      color: black;
+      pointer-events: visibleFill;
+      opacity: 1
+    }
+  </style>
+  <defs>
+    <linearGradient id="arm">
+      <stop offset="0" stop-color="rgb(102,102,102)" stop-opacity="1"/>
+      <stop offset="0.125" stop-color="rgb(195,195,195)" stop-opacity="1"/>
+      <stop offset="0.625" stop-color="rgb(136,136,136)" stop-opacity="1"/>
+      <stop offset="1" stop-color="rgb(102,102,102)" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="gneg">
+      <stop offset="0" stop-color="rgb(191,191,191)" stop-opacity="1"/>
+      <stop offset="0.125" stop-color="rgb(255,255,255)" stop-opacity="1"/>
+      <stop offset="0.625" stop-color="rgb(255,255,255)" stop-opacity="1"/>
+      <stop offset="1" stop-color="rgb(191,191,191)" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="gpos-100">
+      <stop offset="0" stop-color="rgb(0,0,0)" stop-opacity="1"/>
+      <stop offset="0.125" stop-color="rgb(127,127,127)" stop-opacity="1"/>
+      <stop offset="0.625" stop-color="rgb(0,0,0)" stop-opacity="1"/>
+      <stop offset="1" stop-color="rgb(0,0,0)" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="gpos-33">
+      <stop offset="0" stop-color="rgb(127,127,127)" stop-opacity="1"/>
+      <stop offset="0.125" stop-color="rgb(212,212,212)" stop-opacity="1"/>
+      <stop offset="0.625" stop-color="rgb(170,170,170)" stop-opacity="1"/>
+      <stop offset="1" stop-color="rgb(127,127,127)" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="gpos-66">
+      <stop offset="0" stop-color="rgb(76,76,76)" stop-opacity="1"/>
+      <stop offset="0.125" stop-color="rgb(178,178,178)" stop-opacity="1"/>
+      <stop offset="0.625" stop-color="rgb(102,102,102)" stop-opacity="1"/>
+      <stop offset="1" stop-color="rgb(76,76,76)" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="gpos-75">
+      <stop offset="0" stop-color="rgb(51,51,51)" stop-opacity="1"/>
+      <stop offset="0.125" stop-color="rgb(161,161,161)" stop-opacity="1"/>
+      <stop offset="0.625" stop-color="rgb(68,68,68)" stop-opacity="1"/>
+      <stop offset="1" stop-color="rgb(51,51,51)" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="acen">
+      <stop offset="0" stop-color="rgb(191,146,146)" stop-opacity="1"/>
+      <stop offset="0.125" stop-color="rgb(255,163,163)" stop-opacity="1"/>
+      <stop offset="0.625" stop-color="rgb(255,192,192)" stop-opacity="1"/>
+      <stop offset="1" stop-color="rgb(191,146,146)" stop-opacity="1"/>
+    </linearGradient>"
+  </defs>
+  <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+    <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+      <g transform="translate(20,20),matrix(1 0 0 1 0 16)">
+        <clipPath id="ideo_4">
+          <path id="ideo_3" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,304.27671 C12,306.27671 9,309.27671 6 309.27671 C3,309.27671 0,306.27671 0,304.27671 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+        </clipPath>
+        <g transform="translate(35,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">1</text>
+          </g>
+          <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+              <use href="url(#ideo_3)"/>
+              <g clip-path="url(#ideo_4)">
+                <rect fill="url(#arm)" height="324.27671" stroke="none" width="12" x="0" y="0"/>
+              </g>
+              <g>
+                <rect fill="lime" class="Integration" height="2.58292696" stroke="none" width="12" x="0" y="155.9942005609039"/>
+                <text class="int_txt" fill="black" text-decoration="underline" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="0" y="215" font-weight="bold" >Int.1</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="0" y="230" >Name: NC_003070.9_15447120</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="0" y="245" >Chrom: 1</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="0" y="260" >Contig: NC_003070.9</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="0" y="275" >Position [bp]: 15447120</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="0" y="290" >Features: no feature reported</text>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+          </g>
+        </g>
+        <clipPath id="ideo_6">
+          <path id="ideo_5" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,196.98289 C12,198.98289 9,201.98289 6 201.98289 C3,201.98289 0,198.98289 0,196.98289 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+        </clipPath>
+        <g transform="translate(70,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">2</text>
+          </g>
+          <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+              <use href="url(#ideo_5)"/>
+              <g clip-path="url(#ideo_6)">
+                <rect fill="url(#arm)" height="216.98289" stroke="none" width="12" x="0" y="0"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+          </g>
+        </g>
+        <clipPath id="ideo_8">
+          <path id="ideo_7" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,234.5983 C12,236.5983 9,239.5983 6 239.5983 C3,239.5983 0,236.5983 0,234.5983 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+        </clipPath>
+        <g transform="translate(105,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">3</text>
+          </g>
+          <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+              <use href="url(#ideo_7)"/>
+              <g clip-path="url(#ideo_8)">
+                <rect fill="url(#arm)" height="254.5983" stroke="none" width="12" x="0" y="0"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+          </g>
+        </g>
+        <clipPath id="ideo_10">
+          <path id="ideo_9" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,185.85056 C12,187.85056 9,190.85056 6 190.85056 C3,190.85056 0,187.85056 0,185.85056 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+        </clipPath>
+        <g transform="translate(140,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">4</text>
+          </g>
+          <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+              <use href="url(#ideo_9)"/>
+              <g clip-path="url(#ideo_10)">
+                <rect fill="url(#arm)" height="205.85056" stroke="none" width="12" x="0" y="0"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+          </g>
+        </g>
+        <clipPath id="ideo_12">
+          <path id="ideo_11" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,269.75502 C12,271.75502 9,274.75502 6 274.75502 C3,274.75502 0,271.75502 0,269.75502 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+        </clipPath>
+        <g transform="translate(175,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">5</text>
+          </g>
+          <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+              <use href="url(#ideo_11)"/>
+              <g clip-path="url(#ideo_12)">
+                <rect fill="url(#arm)" height="289.75502" stroke="none" width="12" x="0" y="0"/>
+              </g>
+              <g>
+                <rect fill="lime" class="Integration" height="2.58292696" stroke="none" width="12" x="0" y="206.04952419129847"/>
+                <text class="int_txt" fill="black" text-decoration="underline" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-140" y="215" font-weight="bold" >Int.2</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-140" y="230" >Name: NC_003076.8_20378321</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-140" y="245" >Chrom: 5</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-140" y="260" >Contig: NC_003076.8</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-140" y="275" >Position [bp]: 20378321</text>
+                <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-140" y="290" >Features: no feature reported</text>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

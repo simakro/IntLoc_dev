@@ -1,0 +1,237 @@
+<DOCTYPE !html>
+    <html lang="en">
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        </head>
+        <style>
+            #tooltip {
+                background: #fff8dc;
+                border: 1px solid black;
+                border-radius: 5px;
+                padding: 5px;
+                white-space: pre-wrap;
+                }
+        </style>
+        <script>
+            function showTooltip(evt, text) {
+                let tooltip = document.getElementById("tooltip");
+                tooltip.innerHTML = text;
+                tooltip.style.display = "block";
+                tooltip.style.left = evt.pageX + 10 + 'px';
+                tooltip.style.top = evt.pageY + 10 + 'px';
+            }
+        
+            function hideTooltip() {
+                var tooltip = document.getElementById("tooltip");
+                tooltip.style.display = "none";
+            }
+        </script>
+        <body>
+            <div id="tooltip" display="none" style="position: absolute; display: none;"></div>
+            <?xml version="1.0"?>
+            <svg height="350" version="1.1" width="359.88" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <desc>read to reference mapping figure</desc>
+                <g transform="translate(0 10)">
+                <g class="reference" transform="translate(0 0)">
+                    <polygon class="int-site" fill="blue" transform="translate(151.73 20)" points="-5 0, 0 10, 5 0"/>
+                    <text class="int_txt" fill="blue" font-size="10px" transform="translate(126.72999999999999 5)" font-weight="regular" >Integration site</text>
+                    <rect class="ref" x="20" y="30" fill="grey" width="319.88" height="10"/>
+                    <rect class="major_tick" x="20.0" y="20" fill="rgb(91,91,91)" width="1" height="20"/>
+                    <text class="tick_txt" fill="black" font-size="8px" transform="translate(10 15)" font-weight="regular" >91904</text>
+                    <rect class="minor_tick" x="60" y="25" fill="rgb(91,91,91)" width="1" height="5"/>
+                    <rect class="minor_tick" x="80" y="25" fill="rgb(91,91,91)" width="1" height="5"/>
+                    <rect class="minor_tick" x="100" y="25" fill="rgb(91,91,91)" width="1" height="5"/>
+                    <rect class="major_tick" x="120" y="20" fill="rgb(91,91,91)" width="1" height="20"/>
+                    <text class="tick_txt" fill="black" font-size="8px" transform="translate(110 15)" font-weight="regular" >101904</text>
+                    <rect class="minor_tick" x="140" y="25" fill="rgb(91,91,91)" width="1" height="5"/>
+                    <rect class="minor_tick" x="160" y="25" fill="rgb(91,91,91)" width="1" height="5"/>
+                    <rect class="minor_tick" x="180" y="25" fill="rgb(91,91,91)" width="1" height="5"/>
+                    <rect class="minor_tick" x="200" y="25" fill="rgb(91,91,91)" width="1" height="5"/>
+                    <rect class="major_tick" x="220" y="20" fill="rgb(91,91,91)" width="1" height="20"/>
+                    <text class="tick_txt" fill="black" font-size="8px" transform="translate(210 15)" font-weight="regular" >111904</text>
+                    <rect class="minor_tick" x="240" y="25" fill="rgb(91,91,91)" width="1" height="5"/>
+                    <rect class="minor_tick" x="260" y="25" fill="rgb(91,91,91)" width="1" height="5"/>
+                    <rect class="minor_tick" x="280" y="25" fill="rgb(91,91,91)" width="1" height="5"/>
+                    <rect class="minor_tick" x="300" y="25" fill="rgb(91,91,91)" width="1" height="5"/>
+                    <rect class="minor_tick" x="40.0" y="25" fill="rgb(91,91,91)" width="1" height="5"/>
+                </g>
+                <g class="read">
+                    <g class="read_pos" transform="translate(20.44 45)">
+                        <g>
+                            <rect class="int_read" x="0" y="0" fill="#008000" stroke="green" stroke-width="0" width="134.32" height="10" onmousemove='showTooltip(evt, "S3_487__10xints\ntstart:91948 tend:105052");' onmouseout="hideTooltip();"/>
+                            <polygon class="arrowhead" transform="translate(134.32 0)" fill="black" points="-5 0, 0 5, -5 10"/>
+                        </g>
+                    </g>
+                </g>
+                <g class="read">
+                    <g class="read_pos" transform="translate(152.63 45)">
+                        <g>
+                            <rect class="int_read" x="0" y="0" fill="#00a000" stroke="green" stroke-width="0" width="59.44" height="10" onmousemove='showTooltip(evt, "S3_487__10xints\ntstart:105167 tend:110955");' onmouseout="hideTooltip();"/>
+                            <polygon class="arrowhead" transform="translate(59.44 0)" fill="black" points="-5 0, 0 5, -5 10"/>
+                        </g>
+                    </g>
+                </g>
+                <g class="read">
+                    <g class="read_pos" transform="translate(76.28 60)">
+                        <g>
+                            <rect class="int_read" x="0" y="0" fill="#008000" stroke="green" stroke-width="0" width="77.41" height="10" onmousemove='showTooltip(evt, "S3_497__10xints\ntstart:97532 tend:105061");' onmouseout="hideTooltip();"/>
+                            <polygon class="arrowhead" transform="translate(77.41 0)" fill="black" points="-5 0, 0 5, -5 10"/>
+                        </g>
+                    </g>
+                </g>
+                <g class="read">
+                    <g class="read_pos" transform="translate(152.16 60)">
+                        <g>
+                            <rect class="int_read" x="0" y="0" fill="#00a000" stroke="green" stroke-width="0" width="52.86" height="10" onmousemove='showTooltip(evt, "S3_497__10xints\ntstart:105120 tend:110294");' onmouseout="hideTooltip();"/>
+                            <polygon class="arrowhead" transform="translate(52.86 0)" fill="black" points="-5 0, 0 5, -5 10"/>
+                        </g>
+                    </g>
+                </g>
+                <g class="read">
+                    <g class="read_pos" transform="translate(82.95 75)">
+                        <g>
+                            <rect class="int_read" x="0" y="0" fill="#008000" stroke="green" stroke-width="0" width="70.41" height="10" onmousemove='showTooltip(evt, "S3_536__10xints\ntstart:98199 tend:104947");' onmouseout="hideTooltip();"/>
+                            <polygon class="arrowhead" transform="translate(0 0)" fill="black" points="5 0, 0 5, 5 10"/>
+                        </g>
+                    </g>
+                </g>
+                <g class="read">
+                    <g class="read_pos" transform="translate(151.73 75)">
+                        <g>
+                            <rect class="int_read" x="0" y="0" fill="#00a000" stroke="green" stroke-width="0" width="5.97" height="10" onmousemove='showTooltip(evt, "S3_536__10xints\ntstart:105077 tend:105654");' onmouseout="hideTooltip();"/>
+                            <polygon class="arrowhead" transform="translate(0 0)" fill="black" points="5 0, 0 5, 5 10"/>
+                        </g>
+                    </g>
+                </g>
+                <g class="read">
+                    <g class="read_pos" transform="translate(89.06 90)">
+                        <g>
+                            <rect class="int_read" x="0" y="0" fill="#008000" stroke="green" stroke-width="0" width="63.87" height="10" onmousemove='showTooltip(evt, "S3_386__10xints\ntstart:98810 tend:105061");' onmouseout="hideTooltip();"/>
+                            <polygon class="arrowhead" transform="translate(0 0)" fill="black" points="5 0, 0 5, 5 10"/>
+                        </g>
+                    </g>
+                </g>
+                <g class="read">
+                    <g class="read_pos" transform="translate(96.66 105)">
+                        <g>
+                            <rect class="int_read" x="0" y="0" fill="#008000" stroke="green" stroke-width="0" width="56.33" height="10" onmousemove='showTooltip(evt, "S3_4__10xints\ntstart:99570 tend:105039");' onmouseout="hideTooltip();"/>
+                            <polygon class="arrowhead" transform="translate(0 0)" fill="black" points="5 0, 0 5, 5 10"/>
+                        </g>
+                    </g>
+                </g>
+                <g class="read">
+                    <g class="read_pos" transform="translate(104.86 120)">
+                        <g>
+                            <rect class="int_read" x="0" y="0" fill="#008000" stroke="green" stroke-width="0" width="47.94" height="10" onmousemove='showTooltip(evt, "S3_199__10xints\ntstart:100390 tend:105052");' onmouseout="hideTooltip();"/>
+                            <polygon class="arrowhead" transform="translate(47.94 0)" fill="black" points="-5 0, 0 5, -5 10"/>
+                        </g>
+                    </g>
+                </g>
+                <g class="read">
+                    <g class="read_pos" transform="translate(151.95 120)">
+                        <g>
+                            <rect class="int_read" x="0" y="0" fill="#00a000" stroke="green" stroke-width="0" width="60.71" height="10" onmousemove='showTooltip(evt, "S3_199__10xints\ntstart:105099 tend:111008");' onmouseout="hideTooltip();"/>
+                            <polygon class="arrowhead" transform="translate(60.71 0)" fill="black" points="-5 0, 0 5, -5 10"/>
+                        </g>
+                    </g>
+                </g>
+                <g class="read">
+                    <g class="read_pos" transform="translate(105.91 135)">
+                        <g>
+                            <rect class="int_read" x="0" y="0" fill="#008000" stroke="green" stroke-width="0" width="46.47" height="10" onmousemove='showTooltip(evt, "S3_351__10xints\ntstart:100495 tend:105008");' onmouseout="hideTooltip();"/>
+                            <polygon class="arrowhead" transform="translate(46.47 0)" fill="black" points="-5 0, 0 5, -5 10"/>
+                        </g>
+                    </g>
+                </g>
+                <g class="read">
+                    <g class="read_pos" transform="translate(151.81 135)">
+                        <g>
+                            <rect class="int_read" x="0" y="0" fill="#00a000" stroke="green" stroke-width="0" width="115.46" height="10" onmousemove='showTooltip(evt, "S3_351__10xints\ntstart:105085 tend:116302");' onmouseout="hideTooltip();"/>
+                            <polygon class="arrowhead" transform="translate(115.46 0)" fill="black" points="-5 0, 0 5, -5 10"/>
+                        </g>
+                    </g>
+                </g>
+                <g class="read">
+                    <g class="read_pos" transform="translate(120.34 150)">
+                        <g>
+                            <rect class="int_read" x="0" y="0" fill="#008000" stroke="green" stroke-width="0" width="32.29" height="10" onmousemove='showTooltip(evt, "S3_486__10xints\ntstart:101938 tend:105048");' onmouseout="hideTooltip();"/>
+                            <polygon class="arrowhead" transform="translate(0 0)" fill="black" points="5 0, 0 5, 5 10"/>
+                        </g>
+                    </g>
+                </g>
+                <g class="read">
+                    <g class="read_pos" transform="translate(128.35 165)">
+                        <g>
+                            <rect class="int_read" x="0" y="0" fill="#008000" stroke="green" stroke-width="0" width="23.62" height="10" onmousemove='showTooltip(evt, "S3_395__10xints\ntstart:102739 tend:105052");' onmouseout="hideTooltip();"/>
+                            <polygon class="arrowhead" transform="translate(23.62 0)" fill="black" points="-5 0, 0 5, -5 10"/>
+                        </g>
+                    </g>
+                </g>
+                <g class="read">
+                    <g class="read_pos" transform="translate(151.73 165)">
+                        <g>
+                            <rect class="int_read" x="0" y="0" fill="#00a000" stroke="green" stroke-width="0" width="12.14" height="10" onmousemove='showTooltip(evt, "S3_395__10xints\ntstart:105077 tend:106255");' onmouseout="hideTooltip();"/>
+                            <polygon class="arrowhead" transform="translate(12.14 0)" fill="black" points="-5 0, 0 5, -5 10"/>
+                        </g>
+                    </g>
+                </g>
+                <g class="read">
+                    <g class="read_pos" transform="translate(128.5 180)">
+                        <g>
+                            <rect class="int_read" x="0" y="0" fill="#008000" stroke="green" stroke-width="0" width="23.45" height="10" onmousemove='showTooltip(evt, "S3_315__10xints\ntstart:102754 tend:105034");' onmouseout="hideTooltip();"/>
+                            <polygon class="arrowhead" transform="translate(23.45 0)" fill="black" points="-5 0, 0 5, -5 10"/>
+                        </g>
+                    </g>
+                </g>
+                <g class="read">
+                    <g class="read_pos" transform="translate(135.49 195)">
+                        <g>
+                            <rect class="int_read" x="0" y="0" fill="#008000" stroke="green" stroke-width="0" width="16.65" height="10" onmousemove='showTooltip(evt, "S3_529__10xints\ntstart:103453 tend:105069");' onmouseout="hideTooltip();"/>
+                            <polygon class="arrowhead" transform="translate(16.65 0)" fill="black" points="-5 0, 0 5, -5 10"/>
+                        </g>
+                    </g>
+                </g>
+                <g class="read">
+                    <g class="read_pos" transform="translate(152.1 195)">
+                        <g>
+                            <rect class="int_read" x="0" y="0" fill="#00a000" stroke="green" stroke-width="0" width="12.02" height="10" onmousemove='showTooltip(evt, "S3_529__10xints\ntstart:105114 tend:106281");' onmouseout="hideTooltip();"/>
+                            <polygon class="arrowhead" transform="translate(12.02 0)" fill="black" points="-5 0, 0 5, -5 10"/>
+                        </g>
+                    </g>
+                </g>
+                <g class="read">
+                    <g class="read_pos" transform="translate(136.20999999999998 210)">
+                        <g>
+                            <rect class="int_read" x="0" y="0" fill="#008000" stroke="green" stroke-width="0" width="13.23" height="10" onmousemove='showTooltip(evt, "S3_173__10xints\ntstart:103525 tend:104807");' onmouseout="hideTooltip();"/>
+                            <polygon class="arrowhead" transform="translate(13.23 0)" fill="black" points="-5 0, 0 5, -5 10"/>
+                        </g>
+                    </g>
+                </g>
+                <g class="read">
+                    <g class="read_pos" transform="translate(151.86 210)">
+                        <g>
+                            <rect class="int_read" x="0" y="0" fill="#00a000" stroke="green" stroke-width="0" width="193.1" height="10" onmousemove='showTooltip(evt, "S3_173__10xints\ntstart:105090 tend:123826");' onmouseout="hideTooltip();"/>
+                            <polygon class="arrowhead" transform="translate(193.1 0)" fill="black" points="-5 0, 0 5, -5 10"/>
+                        </g>
+                    </g>
+                </g>
+                <g class="read">
+                    <g class="read_pos" transform="translate(152.0 225)">
+                        <g>
+                            <rect class="int_read" x="0" y="0" fill="#008000" stroke="green" stroke-width="0" width="7.15" height="10" onmousemove='showTooltip(evt, "S3_42__10xints\ntstart:105104 tend:105803");' onmouseout="hideTooltip();"/>
+                            <polygon class="arrowhead" transform="translate(0 0)" fill="black" points="5 0, 0 5, 5 10"/>
+                        </g>
+                    </g>
+                </g>
+                <g class="read">
+                    <g class="read_pos" transform="translate(152.16 240)">
+                        <g>
+                            <rect class="int_read" x="0" y="0" fill="#008000" stroke="green" stroke-width="0" width="47.46" height="10" onmousemove='showTooltip(evt, "S3_187__10xints\ntstart:105120 tend:109731");' onmouseout="hideTooltip();"/>
+                            <polygon class="arrowhead" transform="translate(47.46 0)" fill="black" points="-5 0, 0 5, -5 10"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+    </body>
+</html>

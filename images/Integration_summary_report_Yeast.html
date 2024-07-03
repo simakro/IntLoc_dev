@@ -1,0 +1,1101 @@
+<DOCTYPE !html>
+<html lang="en">
+    <head>
+        <title>Intloc html report</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style>
+        h1 {
+            color: rgba(19, 29, 207, 0.952);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 64;
+            font-weight: bold;
+            line-height: 0.6;
+        }
+        h2 {
+            text-align: center;
+            font-size: 48;
+            line-height: 0.6;
+        }
+        h3 {
+            text-align: center;
+            font-size: 30;
+            font-weight: normal;
+            line-height: 0.2;
+        }
+        h4 {
+            color: rgba(19, 29, 207, 0.952);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 28;
+            font-weight: bold;
+            tab-size:30; 
+	        white-space: pre;
+            line-height: 0.1;
+        }
+        header {
+            color: rgba(13, 13, 218, 0.952);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 48;
+            font-weight: bold;
+        }
+        .tableFixHead {
+            overflow-y: auto;
+            overflow-x: auto;
+            height: 420px;
+        }
+        .tableFixHead thead th {
+            position: sticky;
+            top: 0;
+        }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+            float: center;
+            border-collapse: collapse;
+            width: auto;
+            max-width: 750;
+        }
+        th,
+        td {
+            padding: 8px 16px;
+            border: 1px solid #ccc;
+        }
+        td.clust_reads {
+            max-width: 450px;
+        }
+        th {
+            background: #eee;
+        }
+        .table_container td tr {
+            border: none !important;
+            border-collapse: collapse !important;
+            border-color: white !important;
+            border-style: none;
+            border-width: 0;
+            border-width: 0vh;
+        }
+        .legend {
+            text-align: left;
+            font-size: 12;
+            line-height: 0.6;
+        }
+        #svg_spec_ideo {
+            margin-left: 38%;
+            margin-right: 25%;
+            display: block;
+        }
+        .placeholder {
+            opacity: 0;
+        }
+        .ideo-container {
+            border-collapse: collapse;
+            border-style: none;
+            transform: scale(1.5);
+        }
+        th.int_th {
+            background-color:  rgba(19, 188, 255, 0.952);
+        }
+        th.feat_th {
+            background-color:  rgba(255, 200, 19, 0.952);
+        }
+        th.clust_th {
+            background-color:  rgba(255, 0, 0, 0.952);
+        }
+        .clust_reads {
+            overflow-x: auto;
+            width: 200px;
+        }
+    </style>
+    <body>
+        <header>
+            <div id="logo">
+                <?xml version="1.0" encoding="utf-8"?>
+                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="160.093px" height="81.226px" viewBox="220.088 384.262 160.093 81.226"
+                    enable-background="new 220.088 384.262 160.093 81.226" xml:space="preserve">
+                <g>
+                    <path fill="#5BC9E1" d="M220.088,435.8v-51.538h10.406V435.8H220.088z"/>
+                    <path fill="#5BC9E1" d="M274.299,435.8h-9.879v-19.053c0-4.031-0.211-6.639-0.633-7.822c-0.422-1.183-1.107-2.104-2.057-2.76
+                        c-0.949-0.656-2.092-0.984-3.428-0.984c-1.711,0-3.247,0.469-4.605,1.406c-1.359,0.938-2.291,2.18-2.795,3.727
+                        c-0.504,1.547-0.756,4.407-0.756,8.578v16.91h-9.879v-37.335h9.176v5.484c3.257-4.219,7.359-6.328,12.305-6.328
+                        c2.18,0,4.171,0.393,5.977,1.178c1.805,0.786,3.169,1.788,4.096,3.006c0.926,1.219,1.57,2.602,1.934,4.148
+                        c0.363,1.547,0.545,3.762,0.545,6.645L274.299,435.8L274.299,435.8z"/>
+                    <path fill="#5BC9E1" d="M301.439,398.465v7.875h-6.75v15.047c0,3.046,0.064,4.821,0.193,5.325c0.128,0.506,0.422,0.92,0.879,1.248
+                        c0.457,0.33,1.014,0.492,1.67,0.492c0.914,0,2.238-0.316,3.973-0.949l0.844,7.664c-2.297,0.984-4.898,1.477-7.805,1.477
+                        c-1.781,0-3.387-0.299-4.816-0.895c-1.43-0.598-2.479-1.371-3.146-2.32s-1.131-2.232-1.389-3.85
+                        c-0.211-1.148-0.316-3.469-0.316-6.961V406.34h-4.535v-7.875h4.535v-7.418l9.914-5.766v13.184H301.439z"/>
+                </g>
+                <g>
+                    <path id="_x3C_Compound_L_x3E__1_" fill="#ED2224" d="M264.336,464.644v-51.116h9.991v42.435h24.842v8.684h-34.833V464.644z"/>
+                    <path fill="#ED2224" d="M304.031,445.449c0-3.281,0.775-6.455,2.328-9.527c1.553-3.07,3.752-5.414,6.6-7.031
+                        c2.848-1.615,6.025-2.426,9.535-2.426c5.424,0,9.867,1.834,13.334,5.502c3.465,3.67,5.197,8.303,5.197,13.904
+                        c0,5.648-1.75,10.33-5.248,14.045c-3.5,3.715-7.904,5.572-13.215,5.572c-3.285,0-6.42-0.773-9.4-2.32
+                        c-2.982-1.547-5.25-3.814-6.803-6.803S304.031,449.738,304.031,445.449z M313.751,445.976c0,3.705,0.844,6.539,2.531,8.51
+                        c1.688,1.969,3.77,2.951,6.246,2.951c2.475,0,4.551-0.982,6.227-2.951c1.676-1.971,2.516-4.828,2.516-8.578
+                        c0-3.656-0.84-6.471-2.516-8.439s-3.752-2.953-6.227-2.953c-2.477,0-4.559,0.984-6.246,2.953S313.751,442.273,313.751,445.976z"/>
+                    <path fill="#ED2224" d="M379.708,438.347l-9.352,1.76c-0.314-1.945-1.029-3.41-2.143-4.396c-1.115-0.984-2.561-1.477-4.338-1.477
+                        c-2.363,0-4.248,0.85-5.654,2.549c-1.406,1.701-2.109,4.541-2.109,8.525c0,4.43,0.715,7.559,2.145,9.387
+                        c1.428,1.828,3.346,2.742,5.754,2.742c1.801,0,3.275-0.533,4.422-1.6c1.148-1.066,1.959-2.9,2.432-5.502l9.316,1.652
+                        c-0.969,4.453-2.824,7.814-5.568,10.09c-2.746,2.271-6.428,3.41-11.039,3.41c-5.242,0-9.422-1.725-12.539-5.168
+                        c-3.117-3.445-4.674-8.215-4.674-14.311c0-6.164,1.563-10.963,4.689-14.395c3.127-3.434,7.359-5.15,12.691-5.15
+                        c4.365,0,7.836,0.979,10.414,2.936C376.732,431.357,378.582,434.339,379.708,438.347z"/>
+                </g>
+                <rect x="264.336" y="436.359" fill="#5BC9E1" width="9.992" height="19.609"/>
+                </svg>
+            </div>
+            <h1>IntLoc Integration Report</h1>
+        </header>
+        <main>
+            <h4>Integration reads: 209   Confirmed Integrations: 10</h4>
+            <p class="placeholder">empty paragraph</p>
+            <h2>Species specific ideogram</h2>
+            <h3>For integration information hover over target integration</h3>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <table class="ideo-container">
+                <tr>
+                <td>            
+                    <?xml version="1.0"?>
+                    <svg height="320" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <desc>Ideogram SVG</desc>
+                      <style>
+                        .int_txt {
+                          display: inline;
+                          text-align: center;
+                          color: none;
+                          opacity: 0
+                        }
+                        .Integration:hover {
+                          fill: red;
+                          stroke-color: red;      color: red;
+                          pointer-events: visibleFill;
+                        }
+                        .Integration:hover ~ .int_txt {
+                          fill: black;
+                          color: black;
+                          pointer-events: visibleFill;
+                          opacity: 1
+                        }
+                      </style>
+                      <defs>
+                        <linearGradient id="arm">
+                          <stop offset="0" stop-color="rgb(102,102,102)" stop-opacity="1"/>
+                          <stop offset="0.125" stop-color="rgb(195,195,195)" stop-opacity="1"/>
+                          <stop offset="0.625" stop-color="rgb(136,136,136)" stop-opacity="1"/>
+                          <stop offset="1" stop-color="rgb(102,102,102)" stop-opacity="1"/>
+                        </linearGradient>
+                        <linearGradient id="gneg">
+                          <stop offset="0" stop-color="rgb(191,191,191)" stop-opacity="1"/>
+                          <stop offset="0.125" stop-color="rgb(255,255,255)" stop-opacity="1"/>
+                          <stop offset="0.625" stop-color="rgb(255,255,255)" stop-opacity="1"/>
+                          <stop offset="1" stop-color="rgb(191,191,191)" stop-opacity="1"/>
+                        </linearGradient>
+                        <linearGradient id="gpos-100">
+                          <stop offset="0" stop-color="rgb(0,0,0)" stop-opacity="1"/>
+                          <stop offset="0.125" stop-color="rgb(127,127,127)" stop-opacity="1"/>
+                          <stop offset="0.625" stop-color="rgb(0,0,0)" stop-opacity="1"/>
+                          <stop offset="1" stop-color="rgb(0,0,0)" stop-opacity="1"/>
+                        </linearGradient>
+                        <linearGradient id="gpos-33">
+                          <stop offset="0" stop-color="rgb(127,127,127)" stop-opacity="1"/>
+                          <stop offset="0.125" stop-color="rgb(212,212,212)" stop-opacity="1"/>
+                          <stop offset="0.625" stop-color="rgb(170,170,170)" stop-opacity="1"/>
+                          <stop offset="1" stop-color="rgb(127,127,127)" stop-opacity="1"/>
+                        </linearGradient>
+                        <linearGradient id="gpos-66">
+                          <stop offset="0" stop-color="rgb(76,76,76)" stop-opacity="1"/>
+                          <stop offset="0.125" stop-color="rgb(178,178,178)" stop-opacity="1"/>
+                          <stop offset="0.625" stop-color="rgb(102,102,102)" stop-opacity="1"/>
+                          <stop offset="1" stop-color="rgb(76,76,76)" stop-opacity="1"/>
+                        </linearGradient>
+                        <linearGradient id="gpos-75">
+                          <stop offset="0" stop-color="rgb(51,51,51)" stop-opacity="1"/>
+                          <stop offset="0.125" stop-color="rgb(161,161,161)" stop-opacity="1"/>
+                          <stop offset="0.625" stop-color="rgb(68,68,68)" stop-opacity="1"/>
+                          <stop offset="1" stop-color="rgb(51,51,51)" stop-opacity="1"/>
+                        </linearGradient>
+                        <linearGradient id="acen">
+                          <stop offset="0" stop-color="rgb(191,146,146)" stop-opacity="1"/>
+                          <stop offset="0.125" stop-color="rgb(255,163,163)" stop-opacity="1"/>
+                          <stop offset="0.625" stop-color="rgb(255,192,192)" stop-opacity="1"/>
+                          <stop offset="1" stop-color="rgb(191,146,146)" stop-opacity="1"/>
+                        </linearGradient>"
+                      </defs>
+                      <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+                        <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+                          <g transform="translate(20,20),matrix(1 0 0 1 0 16)">
+                            <clipPath id="ideo_4">
+                              <path id="ideo_3" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,46.0436 C12,48.0436 9,51.0436 6 51.0436 C3,51.0436 0,48.0436 0,46.0436 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+                            </clipPath>
+                            <g transform="translate(24,0),matrix(1 0 0 1 0 0)">
+                              <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+                                <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">1</text>
+                              </g>
+                              <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+                                  <use href="url(#ideo_3)"/>
+                                  <g clip-path="url(#ideo_4)">
+                                    <rect fill="url(#arm)" height="66.0436" stroke="none" width="12" x="0" y="0"/>
+                                    <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="30.293"/>
+                                  </g>
+                                </g>
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+                              </g>
+                            </g>
+                            <clipPath id="ideo_6">
+                              <path id="ideo_5" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,162.6368 C12,164.6368 9,167.6368 6 167.6368 C3,167.6368 0,164.6368 0,162.6368 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+                            </clipPath>
+                            <g transform="translate(48,0),matrix(1 0 0 1 0 0)">
+                              <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+                                <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">2</text>
+                              </g>
+                              <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+                                  <use href="url(#ideo_5)"/>
+                                  <g clip-path="url(#ideo_6)">
+                                    <rect fill="url(#arm)" height="182.6368" stroke="none" width="12" x="0" y="0"/>
+                                    <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="47.6414"/>
+                                  </g>
+                                  <g>
+                                    <rect fill="lime" class="Integration" height="1.6302476470588234" stroke="none" width="12" x="0" y="128.985"/>
+                                    <text class="int_txt" fill="black" text-decoration="underline" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="82" y="160" font-weight="bold" >Int.1</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="82" y="175" >Name: NC_001134.8_644925</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="82" y="190" >Chrom: 2</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="82" y="205" >Contig: NC_001134.8</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="82" y="220" >Position [bp]: 644925</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="82" y="235" >Features: no feature reported</text>
+                                  </g>
+                                </g>
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+                              </g>
+                            </g>
+                            <clipPath id="ideo_8">
+                              <path id="ideo_7" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,63.324 C12,65.324 9,68.324 6 68.324 C3,68.324 0,65.324 0,63.324 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+                            </clipPath>
+                            <g transform="translate(72,0),matrix(1 0 0 1 0 0)">
+                              <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+                                <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">3</text>
+                              </g>
+                              <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+                                  <use href="url(#ideo_7)"/>
+                                  <g clip-path="url(#ideo_8)">
+                                    <rect fill="url(#arm)" height="83.324" stroke="none" width="12" x="0" y="0"/>
+                                    <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="22.877"/>
+                                  </g>
+                                  <g>
+                                    <rect fill="lime" class="Integration" height="1.6302476470588234" stroke="none" width="12" x="0" y="21.0154"/>
+                                    <text class="int_txt" fill="black" text-decoration="underline" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="160" font-weight="bold" >Int.2</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="175" >Name: NC_001135.5_105077</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="190" >Chrom: 3</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="205" >Contig: NC_001135.5</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="220" >Position [bp]: 105077</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="235" >Features: gene (protein_coding)   ILV6</text>
+                                  </g>
+                                  <g>
+                                    <rect fill="lime" class="Integration" height="1.6302476470588234" stroke="none" width="12" x="0" y="34.621"/>
+                                    <text class="int_txt" fill="black" text-decoration="underline" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="160" font-weight="bold" >Int.3</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="175" >Name: NC_001135.5_173105</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="190" >Chrom: 3</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="205" >Contig: NC_001135.5</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="220" >Position [bp]: 173105</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="58" y="235" >Features: gene (protein_coding)   RIM1</text>
+                                  </g>
+                                </g>
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+                              </g>
+                            </g>
+                            <clipPath id="ideo_10">
+                              <path id="ideo_9" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,306.3866 C12,308.3866 9,311.3866 6 311.3866 C3,311.3866 0,308.3866 0,306.3866 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+                            </clipPath>
+                            <g transform="translate(96,0),matrix(1 0 0 1 0 0)">
+                              <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+                                <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">4</text>
+                              </g>
+                              <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+                                  <use href="url(#ideo_9)"/>
+                                  <g clip-path="url(#ideo_10)">
+                                    <rect fill="url(#arm)" height="326.3866" stroke="none" width="12" x="0" y="0"/>
+                                    <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="89.9422"/>
+                                  </g>
+                                  <g>
+                                    <rect fill="lime" class="Integration" height="1.6302476470588234" stroke="none" width="12" x="0" y="134.9116"/>
+                                    <text class="int_txt" fill="black" text-decoration="underline" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="34" y="160" font-weight="bold" >Int.4</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="34" y="175" >Name: NC_001136.10_674558</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="34" y="190" >Chrom: 4</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="34" y="205" >Contig: NC_001136.10</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="34" y="220" >Position [bp]: 674558</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="34" y="235" >Features: gene (protein_coding)   </text>
+                                  </g>
+                                </g>
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+                              </g>
+                            </g>
+                            <clipPath id="ideo_12">
+                              <path id="ideo_11" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,115.3748 C12,117.3748 9,120.3748 6 120.3748 C3,120.3748 0,117.3748 0,115.3748 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+                            </clipPath>
+                            <g transform="translate(120,0),matrix(1 0 0 1 0 0)">
+                              <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+                                <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">5</text>
+                              </g>
+                              <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+                                  <use href="url(#ideo_11)"/>
+                                  <g clip-path="url(#ideo_12)">
+                                    <rect fill="url(#arm)" height="135.3748" stroke="none" width="12" x="0" y="0"/>
+                                    <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="30.3974"/>
+                                  </g>
+                                </g>
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+                              </g>
+                            </g>
+                            <clipPath id="ideo_14">
+                              <path id="ideo_13" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,54.0322 C12,56.0322 9,59.0322 6 59.0322 C3,59.0322 0,56.0322 0,54.0322 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+                            </clipPath>
+                            <g transform="translate(144,0),matrix(1 0 0 1 0 0)">
+                              <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+                                <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">6</text>
+                              </g>
+                              <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+                                  <use href="url(#ideo_13)"/>
+                                  <g clip-path="url(#ideo_14)">
+                                    <rect fill="url(#arm)" height="74.0322" stroke="none" width="12" x="0" y="0"/>
+                                    <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="29.702"/>
+                                  </g>
+                                  <g>
+                                    <rect fill="lime" class="Integration" height="1.6302476470588234" stroke="none" width="12" x="0" y="44.1052"/>
+                                    <text class="int_txt" fill="black" text-decoration="underline" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-14" y="160" font-weight="bold" >Int.5</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-14" y="175" >Name: NC_001138.5_220526</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-14" y="190" >Chrom: 6</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-14" y="205" >Contig: NC_001138.5</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-14" y="220" >Position [bp]: 220526</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-14" y="235" >Features: gene (protein_coding)   RPL2A</text>
+                                  </g>
+                                </g>
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+                              </g>
+                            </g>
+                            <clipPath id="ideo_16">
+                              <path id="ideo_15" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,218.188 C12,220.188 9,223.188 6 223.188 C3,223.188 0,220.188 0,218.188 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+                            </clipPath>
+                            <g transform="translate(168,0),matrix(1 0 0 1 0 0)">
+                              <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+                                <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">7</text>
+                              </g>
+                              <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+                                  <use href="url(#ideo_15)"/>
+                                  <g clip-path="url(#ideo_16)">
+                                    <rect fill="url(#arm)" height="238.188" stroke="none" width="12" x="0" y="0"/>
+                                    <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="99.384"/>
+                                  </g>
+                                  <g>
+                                    <rect fill="lime" class="Integration" height="1.6302476470588234" stroke="none" width="12" x="0" y="25.9244"/>
+                                    <text class="int_txt" fill="black" text-decoration="underline" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-38" y="160" font-weight="bold" >Int.6</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-38" y="175" >Name: NC_001139.9_129622</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-38" y="190" >Chrom: 7</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-38" y="205" >Contig: NC_001139.9</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-38" y="220" >Position [bp]: 129622</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-38" y="235" >Features: no feature reported</text>
+                                  </g>
+                                </g>
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+                              </g>
+                            </g>
+                            <clipPath id="ideo_18">
+                              <path id="ideo_17" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,112.5286 C12,114.5286 9,117.5286 6 117.5286 C3,117.5286 0,114.5286 0,112.5286 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+                            </clipPath>
+                            <g transform="translate(192,0),matrix(1 0 0 1 0 0)">
+                              <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+                                <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">8</text>
+                              </g>
+                              <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+                                  <use href="url(#ideo_17)"/>
+                                  <g clip-path="url(#ideo_18)">
+                                    <rect fill="url(#arm)" height="132.52859999999998" stroke="none" width="12" x="0" y="0"/>
+                                    <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="21.1172"/>
+                                  </g>
+                                </g>
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+                              </g>
+                            </g>
+                            <clipPath id="ideo_20">
+                              <path id="ideo_19" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,87.9776 C12,89.9776 9,92.9776 6 92.9776 C3,92.9776 0,89.9776 0,87.9776 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+                            </clipPath>
+                            <g transform="translate(216,0),matrix(1 0 0 1 0 0)">
+                              <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+                                <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">9</text>
+                              </g>
+                              <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+                                  <use href="url(#ideo_19)"/>
+                                  <g clip-path="url(#ideo_20)">
+                                    <rect fill="url(#arm)" height="107.9776" stroke="none" width="12" x="0" y="0"/>
+                                    <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="71.1258"/>
+                                  </g>
+                                </g>
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+                              </g>
+                            </g>
+                            <clipPath id="ideo_22">
+                              <path id="ideo_21" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,149.1502 C12,151.1502 9,154.1502 6 154.1502 C3,154.1502 0,151.1502 0,149.1502 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+                            </clipPath>
+                            <g transform="translate(240,0),matrix(1 0 0 1 0 0)">
+                              <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+                                <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">10</text>
+                              </g>
+                              <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+                                  <use href="url(#ideo_21)"/>
+                                  <g clip-path="url(#ideo_22)">
+                                    <rect fill="url(#arm)" height="169.1502" stroke="none" width="12" x="0" y="0"/>
+                                    <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="87.2614"/>
+                                  </g>
+                                  <g>
+                                    <rect fill="lime" class="Integration" height="1.6302476470588234" stroke="none" width="12" x="0" y="140.07"/>
+                                    <text class="int_txt" fill="black" text-decoration="underline" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-110" y="160" font-weight="bold" >Int.7</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-110" y="175" >Name: NC_001142.9_700350</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-110" y="190" >Chrom: 10</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-110" y="205" >Contig: NC_001142.9</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-110" y="220" >Position [bp]: 700350</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-110" y="235" >Features: gene (protein_coding)   PMT4</text>
+                                  </g>
+                                </g>
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+                              </g>
+                            </g>
+                            <clipPath id="ideo_24">
+                              <path id="ideo_23" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,133.3632 C12,135.3632 9,138.3632 6 138.3632 C3,138.3632 0,135.3632 0,133.3632 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+                            </clipPath>
+                            <g transform="translate(264,0),matrix(1 0 0 1 0 0)">
+                              <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+                                <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">11</text>
+                              </g>
+                              <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+                                  <use href="url(#ideo_23)"/>
+                                  <g clip-path="url(#ideo_24)">
+                                    <rect fill="url(#arm)" height="153.3632" stroke="none" width="12" x="0" y="0"/>
+                                    <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="88.0258"/>
+                                  </g>
+                                </g>
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+                              </g>
+                            </g>
+                            <clipPath id="ideo_26">
+                              <path id="ideo_25" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,215.6354 C12,217.6354 9,220.6354 6 220.6354 C3,220.6354 0,217.6354 0,215.6354 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+                            </clipPath>
+                            <g transform="translate(288,0),matrix(1 0 0 1 0 0)">
+                              <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+                                <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">12</text>
+                              </g>
+                              <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+                                  <use href="url(#ideo_25)"/>
+                                  <g clip-path="url(#ideo_26)">
+                                    <rect fill="url(#arm)" height="235.6354" stroke="none" width="12" x="0" y="0"/>
+                                    <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="30.1656"/>
+                                  </g>
+                                  <g>
+                                    <rect fill="lime" class="Integration" height="1.6302476470588234" stroke="none" width="12" x="0" y="36.4568"/>
+                                    <text class="int_txt" fill="black" text-decoration="underline" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-158" y="160" font-weight="bold" >Int.8</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-158" y="175" >Name: NC_001144.5_182284</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-158" y="190" >Chrom: 12</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-158" y="205" >Contig: NC_001144.5</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-158" y="220" >Position [bp]: 182284</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-158" y="235" >Features: gene (protein_coding)   YEH2</text>
+                                  </g>
+                                </g>
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+                              </g>
+                            </g>
+                            <clipPath id="ideo_28">
+                              <path id="ideo_27" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,184.8862 C12,186.8862 9,189.8862 6 189.8862 C3,189.8862 0,186.8862 0,184.8862 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+                            </clipPath>
+                            <g transform="translate(312,0),matrix(1 0 0 1 0 0)">
+                              <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+                                <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">13</text>
+                              </g>
+                              <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+                                  <use href="url(#ideo_27)"/>
+                                  <g clip-path="url(#ideo_28)">
+                                    <rect fill="url(#arm)" height="204.8862" stroke="none" width="12" x="0" y="0"/>
+                                    <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="53.6062"/>
+                                  </g>
+                                </g>
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+                              </g>
+                            </g>
+                            <clipPath id="ideo_30">
+                              <path id="ideo_29" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,156.8666 C12,158.8666 9,161.8666 6 161.8666 C3,161.8666 0,158.8666 0,156.8666 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+                            </clipPath>
+                            <g transform="translate(336,0),matrix(1 0 0 1 0 0)">
+                              <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+                                <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">14</text>
+                              </g>
+                              <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+                                  <use href="url(#ideo_29)"/>
+                                  <g clip-path="url(#ideo_30)">
+                                    <rect fill="url(#arm)" height="176.8666" stroke="none" width="12" x="0" y="0"/>
+                                    <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="125.7516"/>
+                                  </g>
+                                  <g>
+                                    <rect fill="lime" class="Integration" height="1.6302476470588234" stroke="none" width="12" x="0" y="39.039"/>
+                                    <text class="int_txt" fill="black" text-decoration="underline" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-206" y="160" font-weight="bold" >Int.9</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-206" y="175" >Name: NC_001146.8_195195</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-206" y="190" >Chrom: 14</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-206" y="205" >Contig: NC_001146.8</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-206" y="220" >Position [bp]: 195195</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-206" y="235" >Features: gene (protein_coding)   ATG2</text>
+                                  </g>
+                                </g>
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+                              </g>
+                            </g>
+                            <clipPath id="ideo_32">
+                              <path id="ideo_31" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,218.2582 C12,220.2582 9,223.2582 6 223.2582 C3,223.2582 0,220.2582 0,218.2582 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+                            </clipPath>
+                            <g transform="translate(360,0),matrix(1 0 0 1 0 0)">
+                              <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+                                <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">15</text>
+                              </g>
+                              <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+                                  <use href="url(#ideo_31)"/>
+                                  <g clip-path="url(#ideo_32)">
+                                    <rect fill="url(#arm)" height="238.2582" stroke="none" width="12" x="0" y="0"/>
+                                    <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="65.3168"/>
+                                  </g>
+                                  <g>
+                                    <rect fill="lime" class="Integration" height="1.6302476470588234" stroke="none" width="12" x="0" y="1.27"/>
+                                    <text class="int_txt" fill="black" text-decoration="underline" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-230" y="160" font-weight="bold" >Int.10</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-230" y="175" >Name: NC_001147.6_6350</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-230" y="190" >Chrom: 15</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-230" y="205" >Contig: NC_001147.6</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-230" y="220" >Position [bp]: 6350</text>
+                                    <text class="int_txt" fill="black" font-size="16px" transform="translate(0,0),matrix(1 0 0 1.6583 0 0)" x="-230" y="235" >Features: gene (protein_coding)   BDS1</text>
+                                  </g>
+                                </g>
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+                              </g>
+                            </g>
+                            <clipPath id="ideo_34">
+                              <path id="ideo_33" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,189.6132 C12,191.6132 9,194.6132 6 194.6132 C3,194.6132 0,191.6132 0,189.6132 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+                            </clipPath>
+                            <g transform="translate(384,0),matrix(1 0 0 1 0 0)">
+                              <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+                                <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">16</text>
+                              </g>
+                              <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+                                  <use href="url(#ideo_33)"/>
+                                  <g clip-path="url(#ideo_34)">
+                                    <rect fill="url(#arm)" height="209.6132" stroke="none" width="12" x="0" y="0"/>
+                                    <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="111.1914"/>
+                                  </g>
+                                </g>
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+                              </g>
+                            </g>
+                            <clipPath id="ideo_36">
+                              <path id="ideo_35" d="M0,5.05 C0,2.5 3,0 6,0 C9,0 12,2.5 12,5 L12,17.1558 C12,19.1558 9,22.1558 6 22.1558 C3,22.1558 0,19.1558 0,17.1558 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+                            </clipPath>
+                            <g transform="translate(408,0),matrix(1 0 0 1 0 0)">
+                              <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+                                <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">mito</text>
+                              </g>
+                              <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)">
+                                  <use href="url(#ideo_35)"/>
+                                  <g clip-path="url(#ideo_36)">
+                                    <rect fill="url(#arm)" height="37.1558" stroke="none" width="12" x="0" y="0"/>
+                                    <rect fill="url(#acen)" height="2" stroke="none" width="12" x="0" y="200.0002"/>
+                                  </g>
+                                </g>
+                                <g transform="translate(0,0),matrix(1 0 0 0.603015 0 0)"/>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                                    </td>
+                </tr>
+            </table>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <h2>Integration table</h2>
+            <table class="table_container">
+                <tbody>
+                    <tr>
+                    <td>
+                        <div class="tableFixHead" width="300">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="int_th">ID</th>
+                                        <th class="int_th">INT_name</th>
+                                        <th class="int_th">Chr/contig</th>
+                                        <th class="int_th">loc</th>
+                                        <th class="int_th">+/-[bp]</th>
+                                        <th class="int_th">rs(b)</th>
+                                        <th class="int_th">rs(m)</th>
+                                        <th class="int_th">ts_cov</th>
+                                        <th class="int_th">IMR</th>
+                                        <th class="int_th">SSBR</th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>NC_001134.8_644925</td>
+                                        <td>NC_001134.8</td>
+                                        <td>644925</td>
+                                        <td>1</td>
+                                        <td>17</td>
+                                        <td>19</td>
+                                        <td>28</td>
+                                        <td>0.916</td>
+                                        <td>none</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>NC_001135.5_105077</td>
+                                        <td>NC_001135.5</td>
+                                        <td>105077</td>
+                                        <td>0</td>
+                                        <td>13</td>
+                                        <td>14</td>
+                                        <td>32</td>
+                                        <td>0.897</td>
+                                        <td>none</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>NC_001135.5_173105</td>
+                                        <td>NC_001135.5</td>
+                                        <td>173105</td>
+                                        <td>0</td>
+                                        <td>16</td>
+                                        <td>18</td>
+                                        <td>27</td>
+                                        <td>0.915</td>
+                                        <td>none</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>NC_001136.10_674558</td>
+                                        <td>NC_001136.10</td>
+                                        <td>674558</td>
+                                        <td>0</td>
+                                        <td>17</td>
+                                        <td>17</td>
+                                        <td>30</td>
+                                        <td>0.916</td>
+                                        <td>0.032</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>NC_001138.5_220526</td>
+                                        <td>NC_001138.5</td>
+                                        <td>220526</td>
+                                        <td>0</td>
+                                        <td>22</td>
+                                        <td>24</td>
+                                        <td>29</td>
+                                        <td>0.921</td>
+                                        <td>0.068</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>NC_001139.9_129622</td>
+                                        <td>NC_001139.9</td>
+                                        <td>129622</td>
+                                        <td>0</td>
+                                        <td>15</td>
+                                        <td>16</td>
+                                        <td>34</td>
+                                        <td>0.916</td>
+                                        <td>none</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>NC_001142.9_700350</td>
+                                        <td>NC_001142.9</td>
+                                        <td>700350</td>
+                                        <td>0</td>
+                                        <td>15</td>
+                                        <td>17</td>
+                                        <td>26</td>
+                                        <td>0.925</td>
+                                        <td>0.047</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>NC_001144.5_182284</td>
+                                        <td>NC_001144.5</td>
+                                        <td>182284</td>
+                                        <td>0</td>
+                                        <td>17</td>
+                                        <td>19</td>
+                                        <td>25</td>
+                                        <td>0.910</td>
+                                        <td>none</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>NC_001146.8_195195</td>
+                                        <td>NC_001146.8</td>
+                                        <td>195195</td>
+                                        <td>0</td>
+                                        <td>18</td>
+                                        <td>19</td>
+                                        <td>29</td>
+                                        <td>0.921</td>
+                                        <td>none</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>NC_001147.6_6350</td>
+                                        <td>NC_001147.6</td>
+                                        <td>6350</td>
+                                        <td>0</td>
+                                        <td>17</td>
+                                        <td>18</td>
+                                        <td>24</td>
+                                        <td>0.918</td>
+                                        <td>n.d.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="legend">loc = location/position on chromosome in basepairs</p>
+                            <p class="legend">+/-[bp] = location placement uncertainty in basepairs (rounded SD of alignment edges used to determine insertion location)</p>
+                            <p class="legend">rs = reads supporting integration (b:BLAST, m:minimap2)</p>
+                            <p class="legend">ts_cov = total number of reads covering integration site</p>
+                            <p class="legend">IMR = identity match ratio (the average identity of all non-construct sequences in all supporting reads to the integration site)</p>
+                            <p class="legend">SSBR = most similar secondary site bitscore ratio (ratio of summed bitscores of supporting reads aligned to the called int. site or to the next best potential alternative site)</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+        <h2>Single ideo selection</h2>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <table class="ideo-container">
+          <tbody>
+              <tr>
+              <td>
+              <div class="tableFixHead" >
+                <table class="select_display">
+                  <thead>
+                    <tr>
+                        <select name="single_ideo" id="ideo_select" onchange="document.getElementById('curr_ideo').src = this.value">
+                            <option value="./figures/single_chrom/10.svg">10.svg</option>
+                            <option value="./figures/single_chrom/12.svg">12.svg</option>
+                            <option value="./figures/single_chrom/15.svg">15.svg</option>
+                            <option value="./figures/single_chrom/14.svg">14.svg</option>
+                            <option value="./figures/single_chrom/3.svg">3.svg</option>
+                            <option value="./figures/single_chrom/2.svg">2.svg</option>
+                            <option value="./figures/single_chrom/6.svg">6.svg</option>
+                            <option value="./figures/single_chrom/7.svg">7.svg</option>
+                            <option value="./figures/single_chrom/4.svg">4.svg</option>
+                        </select>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img src="./figures/single_chrom/4.svg" id="curr_ideo">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              </td>
+              </tr>
+          </tbody>
+        </table>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+            <h2>Feature table</h2>
+            <table class="table_container">
+                <tbody>
+                    <tr>
+                    <td>
+                        <div class="tableFixHead" width="360">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="feat_th">Integration</th>
+                                        <th class="feat_th">genomic features</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>NC_001134.8_644925</td>
+                                        <td>no feature reported</td>
+                                    </tr>
+                                    <tr>
+                                        <td>NC_001135.5_105077</td>
+                                        <td>gene	protein_coding	GCF_000146045.2	Primary Assembly	chromosome	III	NC_001135.5	104619	105548	-					ILV6	850348	YCL009C	930		partial</td>
+                                    </tr>
+                                    <tr>
+                                        <td>NC_001135.5_173105</td>
+                                        <td>gene	protein_coding	GCF_000146045.2	Primary Assembly	chromosome	III	NC_001135.5	172950	173440	-					RIM1	850395	YCR028C-A	491		partial</td>
+                                    </tr>
+                                    <tr>
+                                        <td>NC_001136.10_674558</td>
+                                        <td>gene	protein_coding	GCF_000146045.2	Primary Assembly	chromosome	IV	NC_001136.10	673520	675667	-						851687	YDR109C	2148		partial</td>
+                                    </tr>
+                                    <tr>
+                                        <td>NC_001138.5_220526</td>
+                                        <td>gene	protein_coding	GCF_000146045.2	Primary Assembly	chromosome	VI	NC_001138.5	220507	221418	-					RPL2A	850590	YFR031C-A	912		partial</td>
+                                    </tr>
+                                    <tr>
+                                        <td>NC_001139.9_129622</td>
+                                        <td>no feature reported</td>
+                                    </tr>
+                                    <tr>
+                                        <td>NC_001142.9_700350</td>
+                                        <td>gene	protein_coding	GCF_000146045.2	Primary Assembly	chromosome	X	NC_001142.9	698326	700614	-					PMT4	853608	YJR143C	2289		partial</td>
+                                    </tr>
+                                    <tr>
+                                        <td>NC_001144.5_182284</td>
+                                        <td>gene	protein_coding	GCF_000146045.2	Primary Assembly	chromosome	XII	NC_001144.5	181789	183405	-					YEH2	850707	YLR020C	1617		partial</td>
+                                    </tr>
+                                    <tr>
+                                        <td>NC_001146.8_195195</td>
+                                        <td>gene	protein_coding	GCF_000146045.2	Primary Assembly	chromosome	XIV	NC_001146.8	191324	196102	+					ATG2	855479	YNL242W	4779		partial</td>
+                                    </tr>
+                                    <tr>
+                                        <td>NC_001147.6_6350</td>
+                                        <td>gene	protein_coding	GCF_000146045.2	Primary Assembly	chromosome	XV	NC_001147.6	6175	8115	+					BDS1	854000	YOL164W	1941		partial</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+        <h2>Integration candidate read mappings</h2>
+        <h3>Reads containing integration sequence aligned to reference (minimap2) for evaluation</h3>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <table class="ideo-container">
+          <tbody>
+              <tr>
+              <td>
+              <div class="tableFixHead" >
+                <table class="select_display">
+                  <thead>
+                    <tr>
+                        <select name="cand_read_maps" id="maps_select" onchange="document.getElementById('curr_map').src = this.value">
+                            <option value="./figures/map_figs/NC_001139.9_129622_cand_read_mappings.html">NC_001139.9_129622_cand_read_mappings.html</option>
+                            <option value="./figures/map_figs/NC_001146.8_195195_cand_read_mappings.html">NC_001146.8_195195_cand_read_mappings.html</option>
+                            <option value="./figures/map_figs/NC_001135.5_173105_cand_read_mappings.html">NC_001135.5_173105_cand_read_mappings.html</option>
+                            <option value="./figures/map_figs/NC_001142.9_700350_cand_read_mappings.html">NC_001142.9_700350_cand_read_mappings.html</option>
+                            <option value="./figures/map_figs/NC_001138.5_220526_cand_read_mappings.html">NC_001138.5_220526_cand_read_mappings.html</option>
+                            <option value="./figures/map_figs/NC_001144.5_182284_cand_read_mappings.html">NC_001144.5_182284_cand_read_mappings.html</option>
+                            <option value="./figures/map_figs/NC_001147.6_6350_cand_read_mappings.html">NC_001147.6_6350_cand_read_mappings.html</option>
+                            <option value="./figures/map_figs/NC_001135.5_105077_cand_read_mappings.html">NC_001135.5_105077_cand_read_mappings.html</option>
+                            <option value="./figures/map_figs/NC_001136.10_674558_cand_read_mappings.html">NC_001136.10_674558_cand_read_mappings.html</option>
+                            <option value="./figures/map_figs/NC_001134.8_644925_cand_read_mappings.html">NC_001134.8_644925_cand_read_mappings.html</option>
+                        </select>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <iframe src="./figures/map_figs/NC_001134.8_644925_cand_read_mappings.html" id="curr_map" height="360" width="640"></iframe>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              </td>
+              </tr>
+          </tbody>
+        </table>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <h2>Run Information table</h2>
+        <table class="table_container">
+            <tbody>
+                <tr>
+                <td>
+                    <div class="tableFixHead" >
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="info_th">Category</th>
+                                    <th class="info_th">run info</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>nodename</td>
+                                    <td>Simons-MacBook-Pro.fritz.box</td>
+                                </tr>
+                                <tr>
+                                    <td>OS</td>
+                                    <td>Darwin</td>
+                                </tr>
+                                <tr>
+                                    <td>sys_release</td>
+                                    <td>21.6.0</td>
+                                </tr>
+                                <tr>
+                                    <td>sys_version</td>
+                                    <td>Darwin Kernel Version 21.6.0: Mon Aug 22 20:17:10 PDT 2022; root:xnu-8020.140.49~2/RELEASE_X86_64</td>
+                                </tr>
+                                <tr>
+                                    <td>IntLoc_version</td>
+                                    <td>0.0.dev43</td>
+                                </tr>
+                                <tr>
+                                    <td>python_ver</td>
+                                    <td> 3.9.4</td>
+                                </tr>
+                                <tr>
+                                    <td>BLAST_ver</td>
+                                    <td> blastn: 2.11.0+ Package: blast 2.11.0; build Oct 22 2020 11:39:30</td>
+                                </tr>
+                                <tr>
+                                    <td>minimap2_ver</td>
+                                    <td> 2.24-r1122</td>
+                                </tr>
+                                <tr>
+                                    <td>num_CPUs</td>
+                                    <td> 8</td>
+                                </tr>
+                                <tr>
+                                    <td>machine</td>
+                                    <td> x86_64</td>
+                                </tr>
+                                <tr>
+                                    <td>processor</td>
+                                    <td> i386</td>
+                                </tr>
+                                <tr>
+                                    <td>threads_used</td>
+                                    <td> 6</td>
+                                </tr>
+                                <tr>
+                                    <td>start_time</td>
+                                    <td> 2022-12-19 11:55:36</td>
+                                </tr>
+                                <tr>
+                                    <td>end_time</td>
+                                    <td> 2022-12-19 11:56:01</td>
+                                </tr>
+                                <tr>
+                                    <td>run_time (sec)</td>
+                                    <td> 24.678327342</td>
+                                </tr>
+                                <tr>
+                                    <td>mode</td>
+                                    <td> standard</td>
+                                </tr>
+                                <tr>
+                                    <td>Sequencing Reads</td>
+                                    <td> /Users/simon/Documents/GitHub/Integration_locator/intloc/il_test/Test_data/sim_reads_GCF_000146045_2_R64_10xints_and_no-ints_mixed_2022-09-05_covx30_mod.fasta</td>
+                                </tr>
+                                <tr>
+                                    <td>Integrating Sequence</td>
+                                    <td> /Users/simon/Documents/GitHub/Integration_locator/intloc/il_test/Test_data/pmaxGFP-N1_sl_sl.fasta</td>
+                                </tr>
+                                <tr>
+                                    <td>Reference Genome</td>
+                                    <td> /Users/simon/Documents/GitHub/Integration_locator/intloc/il_resources/genome_assemblies/GCF_000146045.2_R64/GCF_000146045.2_R64_genomic.fna</td>
+                                </tr>
+                                <tr>
+                                    <td>Output directory</td>
+                                    <td> /Users/simon/Documents/GitHub/Integration_locator/intloc/il_test/Test_results/intloc_out_2022-12-19_11-55-36</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of reads containing evidence of integration sequence</td>
+                                    <td> 209</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of int-reads passing integration-sequence length filter</td>
+                                    <td> 191</td>
+                                </tr>
+                                <tr>
+                                    <td>Int-reads not mapping to reference</td>
+                                    <td> 24</td>
+                                </tr>
+                                <tr>
+                                    <td>Other int-reads not supporting a confirmed Integration</td>
+                                    <td> 0</td>
+                                </tr>
+                                <tr>
+                                    <td>Int-reads supporting confirmed Integration sites</td>
+                                    <td> 167</td>
+                                </tr>
+                                <tr>
+                                    <td>Average length of (non-truncated) integrated construct in reads</td>
+                                    <td> 4800</td>
+                                </tr>
+                                <tr>
+                                    <td>Average length of integration candidate reads</td>
+                                    <td> 12024</td>
+                                </tr>
+                                <tr>
+                                    <td>Minimum read support</td>
+                                    <td> 3</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of confirmed Integrations</td>
+                                    <td> 10</td>
+                                </tr>
+                                <tr>
+                                    <td>Multimer Info</td>
+                                    <td> No evidence for multimeric or merged integrations detected.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+                </tr>
+            </tbody>
+        </table>
+        </main>
+    </body>
+</html>

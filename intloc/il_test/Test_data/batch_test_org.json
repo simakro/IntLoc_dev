@@ -1,0 +1,187 @@
+{
+  "Yeast_10+3_intra_test": {
+    "mode": "intra",
+    "species": "yeast",
+    "integrator_file": "/Users/simon/Documents/GitHub/Integration_locator/intloc/il_test/Test_data/GCF_000146045.2_R64_pmaxGFP-N1_10xints_20220905+3xints_20231103_only_new.csv",
+    "integrator_file_preex": "/Users/simon/Documents/GitHub/Integration_locator/intloc/il_test/Test_data/GCF_000146045.2_R64_genomic.fna_10xints_pmaxGFP-N1_sl.fasta_2022-09-05_17-40_integrator_report.csv",
+    "cmd": "intloc --intra -o /Users/simon/Documents/GitHub/Integration_locator/intloc/il_test/Test_results -f /Users/simon/Documents/reference_genomes/yeast/simulated_reads/SimReads_yeast_10+3_ints_for_intra_all_conv.fasta -g /Users/simon/Documents/reference_genomes/yeast/genomes_with_sim_ints/GCF_000146045.2_R64_genomic.fna_10xints_pmaxGFP-N1_sl.fasta_2022-09-05_17-40.ints.fasta -c /Users/simon/Documents/GitHub/Integration_locator/intloc/il_test/Test_data/pmaxGFP-N1.fasta --spec yeast",
+    "expectations": {
+      "run_info.csv": {
+        "Number of novel Integrations": 3,
+        "confirmed intragenic sites in reference": 10,
+        "unsupported intragenic sites in reference": 0
+      }
+    }
+  },
+  "Yeast_10+3_standard_test": {
+    "mode": "standard",
+    "species": "yeast",
+    "integrator_file": "/Users/simon/Documents/GitHub/Integration_locator/intloc/il_test/Test_data/GCF_000146045.2_R64_pmaxGFP-N1_10xints_20220905+3xints_20231103_all.csv",
+    "cmd": "intloc -o /Users/simon/Documents/GitHub/Integration_locator/intloc/il_test/Test_results -f /Users/simon/Documents/reference_genomes/yeast/simulated_reads/SimReads_yeast_10+3_ints_for_intra_all_conv.fasta -g /Users/simon/Documents/reference_genomes/yeast/S.cerevisiae_R64/GCF_000146045.2_R64_genomic.fna -c /Users/simon/Documents/GitHub/Integration_locator/intloc/il_test/Test_data/pmaxGFP-N1.fasta --spec yeast",
+    "expectations": {
+      "run_info.csv": {
+        "Number of confirmed Integrations": 13
+      }
+    }
+  },
+  "Yeast_10+3_polyclonal_test": {
+    "mode": "polyclonal",
+    "species": "yeast",
+    "integrator_file": "/Users/simon/Documents/GitHub/Integration_locator/intloc/il_test/Test_data/GCF_000146045.2_R64_pmaxGFP-N1_10xints_20220905+3xints_20231103_all.csv",
+    "cmd": "intloc --polyclonal -o /Users/simon/Documents/GitHub/Integration_locator/intloc/il_test/Test_results -f /Users/simon/Documents/reference_genomes/yeast/simulated_reads/SimReads_yeast_10+3_ints_for_intra_all_conv.fasta -g /Users/simon/Documents/reference_genomes/yeast/S.cerevisiae_R64/GCF_000146045.2_R64_genomic.fna -c /Users/simon/Documents/GitHub/Integration_locator/intloc/il_test/Test_data/pmaxGFP-N1.fasta --spec yeast",
+    "expectations": {
+      "run_info.csv": {
+        "Number of confirmed Integrations": 17
+      }
+    }
+  },
+  "Yeast_10+3_quick_test": {
+    "mode": "quick",
+    "species": "yeast",
+    "integrator_file": "/Users/simon/Documents/GitHub/Integration_locator/intloc/il_test/Test_data/GCF_000146045.2_R64_pmaxGFP-N1_10xints_20220905+3xints_20231103_all.csv",
+    "cmd": "intloc --quick -o /Users/simon/Documents/GitHub/Integration_locator/intloc/il_test/Test_results -f /Users/simon/Documents/reference_genomes/yeast/simulated_reads/SimReads_yeast_10+3_ints_for_intra_all_conv.fasta -g /Users/simon/Documents/reference_genomes/yeast/S.cerevisiae_R64/GCF_000146045.2_R64_genomic.fna -c /Users/simon/Documents/GitHub/Integration_locator/intloc/il_test/Test_data/pmaxGFP-N1.fasta --spec yeast",
+    "expectations": {
+      "run_info.csv": {
+        "Number of confirmed Integrations": 13
+      }
+    }
+  },
+  "Yeast_18+9_diploid_test": {
+    "mode": "standard",
+    "species": "yeast",
+    "integrator_file": "/Users/simon/Documents/reference_genomes/yeast/genomes_with_sim_ints/Yeast_Diploid/combined/integrator_report_GCF_000146045.2_R64_genomic.fna_18+9xints_pmaxGFP-N1.fasta_2023-08-18_18-03.csv",
+    "cmd": "intloc --keep_nonint -o /Users/simon/Documents/GitHub/Integration_locator/intloc/il_test/Test_results -f /Users/simon/Documents/reference_genomes/yeast/simulated_reads/SimReads_Yeast_R64_genomic_18ints+9ints_pmaxGFP-N1_HapA+HapB_diploid_15xcov_conv.fasta -g /Users/simon/Documents/reference_genomes/yeast/S.cerevisiae_R64/GCF_000146045.2_R64_genomic.fna -c /Users/simon/Documents/GitHub/Integration_locator/intloc/il_test/Test_data/pmaxGFP-N1.fasta --spec yeast --min_dist_ints 14",
+    "expectations": {
+      "run_info.csv": {
+        "Number of confirmed Integrations": 25
+      },
+      "Integration_Report.csv": {
+        "NC_001133.9_100000": {
+          "INT_name": "NC_001133.9_100000",
+          "int-rs": 18,
+          "non-int-r": 15
+        },
+        "NC_001134.8_100000": {
+          "INT_name": "NC_001134.8_100001",
+          "int-rs": 42,
+          "non-int-r": 0
+        },
+        "NC_001135.5_100000": {
+          "INT_name": "NC_001135.5_100001",
+          "int-rs": 19,
+          "non-int-r": 15
+        },
+        "NC_001135.5_100015": {
+          "INT_name": "NC_001135.5_100016",
+          "int-rs": 17,
+          "non-int-r": 17
+        },
+        "NC_001136.10_100000": {
+          "INT_name": "NC_001136.10_100001",
+          "int-rs": 11,
+          "non-int-r": 13
+        },
+        "NC_001136.10_100025": {
+          "INT_name": "NC_001136.10_100025",
+          "int-rs": 15,
+          "non-int-r": 9
+        },
+        "NC_001137.3_100000": {
+          "INT_name": "NC_001137.3_100001",
+          "int-rs": 21,
+          "non-int-r": 11
+        },
+        "NC_001137.3_100050": {
+          "INT_name": "NC_001137.3_100051",
+          "int-rs": 13,
+          "non-int-r": 12
+        },
+        "NC_001138.5_100000": {
+          "INT_name": "NC_001138.5_100000",
+          "int-rs": 16,
+          "non-int-r": 15
+        },
+        "NC_001138.5_100100": {
+          "INT_name": "NC_001138.5_100100",
+          "int-rs": 15,
+          "non-int-r": 11
+        },
+        "NC_001139.9_100000": {
+          "INT_name": "NC_001139.9_100000",
+          "int-rs": 19,
+          "non-int-r": 15
+        },
+        "NC_001139.9_101000": {
+          "INT_name": "NC_001139.9_101000",
+          "int-rs": 20,
+          "non-int-r": 13
+        },
+        "NC_001140.6_100000": {
+          "INT_name": "NC_001140.6_100001",
+          "int-rs": 20,
+          "non-int-r": 9
+        },
+        "NC_001140.6_110000": {
+          "INT_name": "NC_001140.6_110001",
+          "int-rs": 11,
+          "non-int-r": 3
+        },
+        "NC_001141.2_100000": {
+          "INT_name": "NC_001141.2_100000",
+          "int-rs": 19,
+          "non-int-r": 13
+        },
+        "NC_001143.9_100000": {
+          "INT_name": "NC_001143.9_100000",
+          "int-rs": 9,
+          "non-int-r": 9
+        },
+        "NC_001143.9_100050": {
+          "INT_name": "NC_001143.9_100051",
+          "int-rs": 10,
+          "non-int-r": 9
+        },
+        "NC_001144.5_100000": {
+          "INT_name": "NC_001144.5_100000",
+          "int-rs": 13,
+          "non-int-r": 18
+        },
+        "NC_001144.5_100100": {
+          "INT_name": "NC_001144.5_100100",
+          "int-rs": 14,
+          "non-int-r": 18
+        },
+        "NC_001145.3_101000": {
+          "INT_name": "NC_001145.3_101000",
+          "int-rs": 17,
+          "non-int-r": 10
+        },
+        "NC_001145.3_100000": {
+          "INT_name": "NC_001145.3_100002",
+          "int-rs": 21,
+          "non-int-r": 9
+        },
+        "NC_001146.8_100000": {
+          "INT_name": "NC_001146.8_100000",
+          "int-rs": 13,
+          "non-int-r": 4
+        },
+        "NC_001146.8_110000": {
+          "INT_name": "NC_001146.8_110000",
+          "int-rs": 13,
+          "non-int-r": 12
+        },
+        "NC_001148.4_100000": {
+          "INT_name": "NC_001148.4_100000",
+          "int-rs": 37,
+          "non-int-r": 0
+        },
+        "NC_001147.6_4_100000": {
+          "INT_name": "NC_001147.6_4_100000",
+          "int-rs": 20,
+          "non-int-r": 8
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,725 @@
+<?xml version="1.0"?>
+<svg height="300" version="1.1" width="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <desc>Ideogram SVG</desc>
+  <style>
+    .int_txt {
+      display: inline;
+      text-align: center;
+      color: none;
+      opacity: 0
+    }
+    .Integration:hover {
+      fill: red;
+      color: red;
+      pointer-events: visibleFill;
+    }
+    .Integration:hover ~ .int_txt {
+      fill: black;
+      color: black;
+      pointer-events: visibleFill;
+      opacity: 1
+    }
+  </style>
+  <defs>
+    <clipPath id="ideo_2">
+      <path id="ideo_1" d="M0.000000,35.162502 C0.000000,17.581251 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,17.581251 12.000000,35.162502 L12.000000,302.837494 C12.000000,320.418762 9.000000,338.000000 6.000000 338.000000 C3.000000,338.000000 0.000000,320.418762 0.000000,302.837494 Z M0.000000,373.162506 C0.000000,355.581238 3.000000,338.000000 6.000000,338.000000 C9.000000,338.000000 12.000000,355.581238 12.000000,373.162506 L12.000000,2315.837402 C12.000000,2333.418701 9.000000,2351.000000 6.000000 2351.000000 C3.000000,2351.000000 0.000000,2333.418701 0.000000,2315.837402 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <linearGradient id="arm">
+      <stop offset="0" stop-color="rgb(102,102,102)" stop-opacity="1"/>
+      <stop offset="0.125" stop-color="rgb(195,195,195)" stop-opacity="1"/>
+      <stop offset="0.625" stop-color="rgb(136,136,136)" stop-opacity="1"/>
+      <stop offset="1" stop-color="rgb(102,102,102)" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="gneg">
+      <stop offset="0" stop-color="rgb(191,191,191)" stop-opacity="1"/>
+      <stop offset="0.125" stop-color="rgb(255,255,255)" stop-opacity="1"/>
+      <stop offset="0.625" stop-color="rgb(255,255,255)" stop-opacity="1"/>
+      <stop offset="1" stop-color="rgb(191,191,191)" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="gvar">
+      <stop offset="0" stop-color="rgb(130,130,191)" stop-opacity="1"/>
+      <stop offset="0.125" stop-color="rgb(144,144,255)" stop-opacity="1"/>
+      <stop offset="0.625" stop-color="rgb(170,170,255)" stop-opacity="1"/>
+      <stop offset="1" stop-color="rgb(130,130,191)" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="gpos">
+      <stop offset="0" stop-color="rgb(0,0,0)" stop-opacity="1"/>
+      <stop offset="0.125" stop-color="rgb(127,127,127)" stop-opacity="1"/>
+      <stop offset="0.625" stop-color="rgb(0,0,0)" stop-opacity="1"/>
+      <stop offset="1" stop-color="rgb(0,0,0)" stop-opacity="1"/>
+    </linearGradient>
+    <clipPath id="ideo_4">
+      <path id="ideo_3" d="M0.000000,35.162502 C0.000000,17.581251 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,17.581251 12.000000,35.162502 L12.000000,2272.837402 C12.000000,2290.418701 9.000000,2308.000000 6.000000 2308.000000 C3.000000,2308.000000 0.000000,2290.418701 0.000000,2272.837402 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_6">
+      <path id="ideo_5" d="M0.000000,35.162502 C0.000000,17.581251 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,17.581251 12.000000,35.162502 L12.000000,127.837494 C12.000000,145.418747 9.000000,163.000000 6.000000 163.000000 C3.000000,163.000000 0.000000,145.418747 0.000000,127.837494 Z M0.000000,198.162506 C0.000000,180.581253 3.000000,163.000000 6.000000,163.000000 C9.000000,163.000000 12.000000,180.581253 12.000000,198.162506 L12.000000,1673.837524 C12.000000,1691.418701 9.000000,1709.000000 6.000000 1709.000000 C3.000000,1709.000000 0.000000,1691.418701 0.000000,1673.837524 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_8">
+      <path id="ideo_7" d="M0.000000,35.162502 C0.000000,17.581251 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,17.581251 12.000000,35.162502 L12.000000,1666.837524 C12.000000,1684.418701 9.000000,1702.000000 6.000000 1702.000000 C3.000000,1702.000000 0.000000,1684.418701 0.000000,1666.837524 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_10">
+      <path id="ideo_9" d="M0.000000,35.162502 C0.000000,17.581251 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,17.581251 12.000000,35.162502 L12.000000,1513.837524 C12.000000,1531.418701 9.000000,1549.000000 6.000000 1549.000000 C3.000000,1549.000000 0.000000,1531.418701 0.000000,1513.837524 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_12">
+      <path id="ideo_11" d="M0.000000,35.162502 C0.000000,17.581251 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,17.581251 12.000000,35.162502 L12.000000,1282.837524 C12.000000,1300.418701 9.000000,1318.000000 6.000000 1318.000000 C3.000000,1318.000000 0.000000,1300.418701 0.000000,1282.837524 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_14">
+      <path id="ideo_13" d="M0.000000,35.162502 C0.000000,17.581251 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,17.581251 12.000000,35.162502 L12.000000,1228.837524 C12.000000,1246.418701 9.000000,1264.000000 6.000000 1264.000000 C3.000000,1264.000000 0.000000,1246.418701 0.000000,1228.837524 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_16">
+      <path id="ideo_15" d="M0.000000,35.162502 C0.000000,17.581251 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,17.581251 12.000000,35.162502 L12.000000,1192.837524 C12.000000,1210.418701 9.000000,1228.000000 6.000000 1228.000000 C3.000000,1228.000000 0.000000,1210.418701 0.000000,1192.837524 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_18">
+      <path id="ideo_17" d="M0.000000,35.162502 C0.000000,17.581251 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,17.581251 12.000000,35.162502 L12.000000,1121.837524 C12.000000,1139.418701 9.000000,1157.000000 6.000000 1157.000000 C3.000000,1157.000000 0.000000,1139.418701 0.000000,1121.837524 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_20">
+      <path id="ideo_19" d="M0.000000,35.162502 C0.000000,17.581251 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,17.581251 12.000000,35.162502 L12.000000,1150.837524 C12.000000,1168.418701 9.000000,1186.000000 6.000000 1186.000000 C3.000000,1186.000000 0.000000,1168.418701 0.000000,1150.837524 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_22">
+      <path id="ideo_21" d="M0.000000,35.162502 C0.000000,17.581251 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,17.581251 12.000000,35.162502 L12.000000,124.837494 C12.000000,142.418747 9.000000,160.000000 6.000000 160.000000 C3.000000,160.000000 0.000000,142.418747 0.000000,124.837494 Z M0.000000,195.162506 C0.000000,177.581253 3.000000,160.000000 6.000000,160.000000 C9.000000,160.000000 12.000000,177.581253 12.000000,195.162506 L12.000000,900.837524 C12.000000,918.418762 9.000000,936.000000 6.000000 936.000000 C3.000000,936.000000 0.000000,918.418762 0.000000,900.837524 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_24">
+      <path id="ideo_23" d="M0.000000,35.162502 C0.000000,17.581251 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,17.581251 12.000000,35.162502 L12.000000,184.837494 C12.000000,202.418747 9.000000,220.000000 6.000000 220.000000 C3.000000,220.000000 0.000000,202.418747 0.000000,184.837494 Z M0.000000,255.162506 C0.000000,237.581253 3.000000,220.000000 6.000000,220.000000 C9.000000,220.000000 12.000000,237.581253 12.000000,255.162506 L12.000000,783.837524 C12.000000,801.418762 9.000000,819.000000 6.000000 819.000000 C3.000000,819.000000 0.000000,801.418762 0.000000,783.837524 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_26">
+      <path id="ideo_25" d="M0.000000,35.162502 C0.000000,17.581251 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,17.581251 12.000000,35.162502 L12.000000,259.837494 C12.000000,277.418762 9.000000,295.000000 6.000000 295.000000 C3.000000,295.000000 0.000000,277.418762 0.000000,259.837494 Z M0.000000,330.162506 C0.000000,312.581238 3.000000,295.000000 6.000000,295.000000 C9.000000,295.000000 12.000000,312.581238 12.000000,330.162506 L12.000000,1050.837524 C12.000000,1068.418701 9.000000,1086.000000 6.000000 1086.000000 C3.000000,1086.000000 0.000000,1068.418701 0.000000,1050.837524 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_28">
+      <path id="ideo_27" d="M0.000000,35.162502 C0.000000,17.581251 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,17.581251 12.000000,35.162502 L12.000000,444.837494 C12.000000,462.418762 9.000000,480.000000 6.000000 480.000000 C3.000000,480.000000 0.000000,462.418762 0.000000,444.837494 Z M0.000000,515.162476 C0.000000,497.581238 3.000000,480.000000 6.000000,480.000000 C9.000000,480.000000 12.000000,497.581238 12.000000,515.162476 L12.000000,1057.837524 C12.000000,1075.418701 9.000000,1093.000000 6.000000 1093.000000 C3.000000,1093.000000 0.000000,1075.418701 0.000000,1057.837524 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_30">
+      <path id="ideo_29" d="M0.000000,35.162502 C0.000000,17.581251 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,17.581251 12.000000,35.162502 L12.000000,469.837494 C12.000000,487.418762 9.000000,505.000000 6.000000 505.000000 C3.000000,505.000000 0.000000,487.418762 0.000000,469.837494 Z M0.000000,540.162476 C0.000000,522.581238 3.000000,505.000000 6.000000,505.000000 C9.000000,505.000000 12.000000,522.581238 12.000000,540.162476 L12.000000,986.837524 C12.000000,1004.418762 9.000000,1022.000000 6.000000 1022.000000 C3.000000,1022.000000 0.000000,1004.418762 0.000000,986.837524 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_32">
+      <path id="ideo_31" d="M0.000000,35.162502 C0.000000,17.581251 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,17.581251 12.000000,35.162502 L12.000000,373.837494 C12.000000,391.418762 9.000000,409.000000 6.000000 409.000000 C3.000000,409.000000 0.000000,391.418762 0.000000,373.837494 Z M0.000000,444.162506 C0.000000,426.581238 3.000000,409.000000 6.000000,409.000000 C9.000000,409.000000 12.000000,426.581238 12.000000,444.162506 L12.000000,836.837524 C12.000000,854.418762 9.000000,872.000000 6.000000 872.000000 C3.000000,872.000000 0.000000,854.418762 0.000000,836.837524 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_34">
+      <path id="ideo_33" d="M0.000000,35.162502 C0.000000,17.581251 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,17.581251 12.000000,35.162502 L12.000000,409.837494 C12.000000,427.418762 9.000000,445.000000 6.000000 445.000000 C3.000000,445.000000 0.000000,427.418762 0.000000,409.837494 Z M0.000000,480.162506 C0.000000,462.581238 3.000000,445.000000 6.000000,445.000000 C9.000000,445.000000 12.000000,462.581238 12.000000,480.162506 L12.000000,854.837524 C12.000000,872.418762 9.000000,890.000000 6.000000 890.000000 C3.000000,890.000000 0.000000,872.418762 0.000000,854.837524 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_36">
+      <path id="ideo_35" d="M0.000000,35.162502 C0.000000,17.581251 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,17.581251 12.000000,35.162502 L12.000000,302.837494 C12.000000,320.418762 9.000000,338.000000 6.000000 338.000000 C3.000000,338.000000 0.000000,320.418762 0.000000,302.837494 Z M0.000000,373.162506 C0.000000,355.581238 3.000000,338.000000 6.000000,338.000000 C9.000000,338.000000 12.000000,355.581238 12.000000,373.162506 L12.000000,754.837524 C12.000000,772.418762 9.000000,790.000000 6.000000 790.000000 C3.000000,790.000000 0.000000,772.418762 0.000000,754.837524 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_38">
+      <path id="ideo_37" d="M0.000000,35.162502 C0.000000,17.581251 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,17.581251 12.000000,35.162502 L12.000000,256.837494 C12.000000,274.418762 9.000000,292.000000 6.000000 292.000000 C3.000000,292.000000 0.000000,274.418762 0.000000,256.837494 Z M0.000000,327.162506 C0.000000,309.581238 3.000000,292.000000 6.000000,292.000000 C9.000000,292.000000 12.000000,309.581238 12.000000,327.162506 L12.000000,737.837524 C12.000000,755.418762 9.000000,773.000000 6.000000 773.000000 C3.000000,773.000000 0.000000,755.418762 0.000000,737.837524 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_40">
+      <path id="ideo_39" d="M0.000000,35.162502 C0.000000,17.581251 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,17.581251 12.000000,35.162502 L12.000000,213.837494 C12.000000,231.418747 9.000000,249.000000 6.000000 249.000000 C3.000000,249.000000 0.000000,231.418747 0.000000,213.837494 Z M0.000000,284.162506 C0.000000,266.581238 3.000000,249.000000 6.000000,249.000000 C9.000000,249.000000 12.000000,266.581238 12.000000,284.162506 L12.000000,480.837494 C12.000000,498.418762 9.000000,516.000000 6.000000 516.000000 C3.000000,516.000000 0.000000,498.418762 0.000000,480.837494 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_42">
+      <path id="ideo_41" d="M0.000000,35.162502 C0.000000,17.581251 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,17.581251 12.000000,35.162502 L12.000000,1210.837524 C12.000000,1228.418701 9.000000,1246.000000 6.000000 1246.000000 C3.000000,1246.000000 0.000000,1228.418701 0.000000,1210.837524 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_44">
+      <path id="ideo_43" d="M0.000000,35.162502 C0.000000,17.581251 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,17.581251 12.000000,35.162502 L12.000000,676.837524 C12.000000,694.418762 9.000000,712.000000 6.000000 712.000000 C3.000000,712.000000 0.000000,694.418762 0.000000,676.837524 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+  </defs>
+  <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+    <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+      <g transform="translate(20,20),matrix(1 0 0 1 0 16)">
+        <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">1</text>
+          </g>
+          <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)">
+              <use xlink:href="url(#ideo_1)"/>
+              <g clip-path="url(#ideo_2)">
+                <rect fill="url(#arm)" height="338" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gneg)" height="89" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gvar)" height="124" stroke="none" width="12" x="0" y="89"/>
+                <rect fill="url(#gneg)" height="125" stroke="none" width="12" x="0" y="213"/>
+                <rect fill="url(#arm)" height="2013" stroke="none" width="12" x="0" y="338"/>
+                <rect fill="url(#gpos)" height="89" stroke="none" width="12" x="0" y="338"/>
+                <rect fill="url(#gneg)" height="185" stroke="none" width="12" x="0" y="427"/>
+                <rect fill="url(#gpos)" height="178" stroke="none" width="12" x="0" y="612"/>
+                <rect fill="url(#gneg)" height="296" stroke="none" width="12" x="0" y="790"/>
+                <rect fill="url(#gpos)" height="153" stroke="none" width="12" x="0" y="1086"/>
+                <rect fill="url(#gneg)" height="185" stroke="none" width="12" x="0" y="1239"/>
+                <rect fill="url(#gpos)" height="72" stroke="none" width="12" x="0" y="1424"/>
+                <rect fill="url(#gneg)" height="35" stroke="none" width="12" x="0" y="1496"/>
+                <rect fill="url(#gpos)" height="47" stroke="none" width="12" x="0" y="1531"/>
+                <rect fill="url(#gneg)" height="71" stroke="none" width="12" x="0" y="1578"/>
+                <rect fill="url(#gpos)" height="25" stroke="none" width="12" x="0" y="1649"/>
+                <rect fill="url(#gneg)" height="124" stroke="none" width="12" x="0" y="1674"/>
+                <rect fill="url(#gpos)" height="22" stroke="none" width="12" x="0" y="1798"/>
+                <rect fill="url(#gneg)" height="139" stroke="none" width="12" x="0" y="1820"/>
+                <rect fill="url(#gpos)" height="71" stroke="none" width="12" x="0" y="1959"/>
+                <rect fill="url(#gneg)" height="71" stroke="none" width="12" x="0" y="2030"/>
+                <rect fill="url(#gpos)" height="54" stroke="none" width="12" x="0" y="2101"/>
+                <rect fill="url(#gneg)" height="71" stroke="none" width="12" x="0" y="2155"/>
+                <rect fill="url(#gvar)" height="125" stroke="none" width="12" x="0" y="2226"/>
+              </g>
+              <g>
+                <rect fill="lime" class="Integration" height="12.057727272727272" stroke="none" width="12" x="0" y="0.34799981357429693"/>
+                <text class="int_txt" fill="black" text-decoration="underline" font-size="12px" transform="translate(0,-5.0),matrix(1 0 0 11.7208 0 0)" x="103" y="15" font-weight="bold" >Int.1</text>
+                <text class="int_txt" fill="black" font-size="12px" transform="translate(0,-5.0),matrix(1 0 0 11.7208 0 0)" x="103" y="30" >Name: NC_051336.1_38563</text>
+                <text class="int_txt" fill="black" font-size="12px" transform="translate(0,-5.0),matrix(1 0 0 11.7208 0 0)" x="103" y="45" >Chrom: 1</text>
+                <text class="int_txt" fill="black" font-size="12px" transform="translate(0,-5.0),matrix(1 0 0 11.7208 0 0)" x="103" y="60" >Contig: NC_051336.1</text>
+                <text class="int_txt" fill="black" font-size="12px" transform="translate(0,-5.0),matrix(1 0 0 11.7208 0 0)" x="103" y="75" >Position [bp]: 38563</text>
+                <text class="int_txt" fill="black" font-size="12px" transform="translate(0,-5.0),matrix(1 0 0 11.7208 0 0)" x="103" y="90" >Features: no feature reported</text>
+              </g>
+              <g>
+                <rect fill="lime" class="Integration" height="12.057727272727272" stroke="none" width="12" x="0" y="1860.7777531630954"/>
+                <text class="int_txt" fill="black" text-decoration="underline" font-size="12px" transform="translate(0,-5.0),matrix(1 0 0 11.7208 0 0)" x="103" y="15" font-weight="bold" >Int.2</text>
+                <text class="int_txt" fill="black" font-size="12px" transform="translate(0,-5.0),matrix(1 0 0 11.7208 0 0)" x="103" y="30" >Name: NC_051336.1_206198882</text>
+                <text class="int_txt" fill="black" font-size="12px" transform="translate(0,-5.0),matrix(1 0 0 11.7208 0 0)" x="103" y="45" >Chrom: 1</text>
+                <text class="int_txt" fill="black" font-size="12px" transform="translate(0,-5.0),matrix(1 0 0 11.7208 0 0)" x="103" y="60" >Contig: NC_051336.1</text>
+                <text class="int_txt" fill="black" font-size="12px" transform="translate(0,-5.0),matrix(1 0 0 11.7208 0 0)" x="103" y="75" >Position [bp]: 206198882</text>
+                <text class="int_txt" fill="black" font-size="12px" transform="translate(0,-5.0),matrix(1 0 0 11.7208 0 0)" x="103" y="90" >Features: gene (protein_coding)   RGD1566289</text>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(17,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">2</text>
+          </g>
+          <g transform="translate(0,3.66868),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)">
+              <use xlink:href="url(#ideo_3)"/>
+              <g clip-path="url(#ideo_4)">
+                <rect fill="url(#arm)" height="2308" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gpos)" height="142" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gneg)" height="167" stroke="none" width="12" x="0" y="142"/>
+                <rect fill="url(#gpos)" height="22" stroke="none" width="12" x="0" y="309"/>
+                <rect fill="url(#gneg)" height="96" stroke="none" width="12" x="0" y="331"/>
+                <rect fill="url(#gpos)" height="28" stroke="none" width="12" x="0" y="427"/>
+                <rect fill="url(#gneg)" height="114" stroke="none" width="12" x="0" y="455"/>
+                <rect fill="url(#gpos)" height="82" stroke="none" width="12" x="0" y="569"/>
+                <rect fill="url(#gneg)" height="107" stroke="none" width="12" x="0" y="651"/>
+                <rect fill="url(#gpos)" height="114" stroke="none" width="12" x="0" y="758"/>
+                <rect fill="url(#gneg)" height="178" stroke="none" width="12" x="0" y="872"/>
+                <rect fill="url(#gpos)" height="82" stroke="none" width="12" x="0" y="1050"/>
+                <rect fill="url(#gneg)" height="168" stroke="none" width="12" x="0" y="1132"/>
+                <rect fill="url(#gpos)" height="124" stroke="none" width="12" x="0" y="1300"/>
+                <rect fill="url(#gneg)" height="107" stroke="none" width="12" x="0" y="1424"/>
+                <rect fill="url(#gpos)" height="29" stroke="none" width="12" x="0" y="1531"/>
+                <rect fill="url(#gneg)" height="274" stroke="none" width="12" x="0" y="1560"/>
+                <rect fill="url(#gpos)" height="124" stroke="none" width="12" x="0" y="1834"/>
+                <rect fill="url(#gneg)" height="72" stroke="none" width="12" x="0" y="1958"/>
+                <rect fill="url(#gpos)" height="71" stroke="none" width="12" x="0" y="2030"/>
+                <rect fill="url(#gneg)" height="100" stroke="none" width="12" x="0" y="2101"/>
+                <rect fill="url(#gvar)" height="107" stroke="none" width="12" x="0" y="2201"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(34,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">3</text>
+          </g>
+          <g transform="translate(0,54.7743),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)">
+              <use xlink:href="url(#ideo_5)"/>
+              <g clip-path="url(#ideo_6)">
+                <rect fill="url(#arm)" height="163" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gvar)" height="53" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gneg)" height="57" stroke="none" width="12" x="0" y="53"/>
+                <rect fill="url(#gpos)" height="53" stroke="none" width="12" x="0" y="110"/>
+                <rect fill="url(#arm)" height="1546" stroke="none" width="12" x="0" y="163"/>
+                <rect fill="url(#gpos)" height="50" stroke="none" width="12" x="0" y="163"/>
+                <rect fill="url(#gneg)" height="178" stroke="none" width="12" x="0" y="213"/>
+                <rect fill="url(#gpos)" height="150" stroke="none" width="12" x="0" y="391"/>
+                <rect fill="url(#gneg)" height="17" stroke="none" width="12" x="0" y="541"/>
+                <rect fill="url(#gpos)" height="47" stroke="none" width="12" x="0" y="558"/>
+                <rect fill="url(#gneg)" height="178" stroke="none" width="12" x="0" y="605"/>
+                <rect fill="url(#gpos)" height="99" stroke="none" width="12" x="0" y="783"/>
+                <rect fill="url(#gneg)" height="29" stroke="none" width="12" x="0" y="882"/>
+                <rect fill="url(#gpos)" height="50" stroke="none" width="12" x="0" y="911"/>
+                <rect fill="url(#gneg)" height="35" stroke="none" width="12" x="0" y="961"/>
+                <rect fill="url(#gpos)" height="125" stroke="none" width="12" x="0" y="996"/>
+                <rect fill="url(#gneg)" height="160" stroke="none" width="12" x="0" y="1121"/>
+                <rect fill="url(#gpos)" height="171" stroke="none" width="12" x="0" y="1281"/>
+                <rect fill="url(#gneg)" height="203" stroke="none" width="12" x="0" y="1452"/>
+                <rect fill="url(#gvar)" height="54" stroke="none" width="12" x="0" y="1655"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(51,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">4</text>
+          </g>
+          <g transform="translate(0,55.3715),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)">
+              <use xlink:href="url(#ideo_7)"/>
+              <g clip-path="url(#ideo_8)">
+                <rect fill="url(#arm)" height="1702" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gneg)" height="142" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gpos)" height="89" stroke="none" width="12" x="0" y="142"/>
+                <rect fill="url(#gneg)" height="60" stroke="none" width="12" x="0" y="231"/>
+                <rect fill="url(#gpos)" height="129" stroke="none" width="12" x="0" y="291"/>
+                <rect fill="url(#gneg)" height="213" stroke="none" width="12" x="0" y="420"/>
+                <rect fill="url(#gpos)" height="25" stroke="none" width="12" x="0" y="633"/>
+                <rect fill="url(#gneg)" height="185" stroke="none" width="12" x="0" y="658"/>
+                <rect fill="url(#gpos)" height="93" stroke="none" width="12" x="0" y="843"/>
+                <rect fill="url(#gneg)" height="14" stroke="none" width="12" x="0" y="936"/>
+                <rect fill="url(#gpos)" height="71" stroke="none" width="12" x="0" y="950"/>
+                <rect fill="url(#gneg)" height="225" stroke="none" width="12" x="0" y="1021"/>
+                <rect fill="url(#gpos)" height="89" stroke="none" width="12" x="0" y="1246"/>
+                <rect fill="url(#gneg)" height="213" stroke="none" width="12" x="0" y="1335"/>
+                <rect fill="url(#gpos)" height="36" stroke="none" width="12" x="0" y="1548"/>
+                <rect fill="url(#gneg)" height="118" stroke="none" width="12" x="0" y="1584"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(68,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(2,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">5</text>
+          </g>
+          <g transform="translate(0,68.4252),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)">
+              <use xlink:href="url(#ideo_9)"/>
+              <g clip-path="url(#ideo_10)">
+                <rect fill="url(#arm)" height="1549" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gneg)" height="110" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gpos)" height="71" stroke="none" width="12" x="0" y="110"/>
+                <rect fill="url(#gneg)" height="128" stroke="none" width="12" x="0" y="181"/>
+                <rect fill="url(#gpos)" height="153" stroke="none" width="12" x="0" y="309"/>
+                <rect fill="url(#gneg)" height="136" stroke="none" width="12" x="0" y="462"/>
+                <rect fill="url(#gpos)" height="25" stroke="none" width="12" x="0" y="598"/>
+                <rect fill="url(#gneg)" height="142" stroke="none" width="12" x="0" y="623"/>
+                <rect fill="url(#gpos)" height="171" stroke="none" width="12" x="0" y="765"/>
+                <rect fill="url(#gneg)" height="68" stroke="none" width="12" x="0" y="936"/>
+                <rect fill="url(#gpos)" height="99" stroke="none" width="12" x="0" y="1004"/>
+                <rect fill="url(#gneg)" height="47" stroke="none" width="12" x="0" y="1103"/>
+                <rect fill="url(#gpos)" height="60" stroke="none" width="12" x="0" y="1150"/>
+                <rect fill="url(#gneg)" height="339" stroke="none" width="12" x="0" y="1210"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(85,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">6</text>
+          </g>
+          <g transform="translate(0,88.1337),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)">
+              <use xlink:href="url(#ideo_11)"/>
+              <g clip-path="url(#ideo_12)">
+                <rect fill="url(#arm)" height="1318" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gpos)" height="35" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gneg)" height="153" stroke="none" width="12" x="0" y="35"/>
+                <rect fill="url(#gpos)" height="36" stroke="none" width="12" x="0" y="188"/>
+                <rect fill="url(#gneg)" height="103" stroke="none" width="12" x="0" y="224"/>
+                <rect fill="url(#gpos)" height="36" stroke="none" width="12" x="0" y="327"/>
+                <rect fill="url(#gneg)" height="135" stroke="none" width="12" x="0" y="363"/>
+                <rect fill="url(#gpos)" height="107" stroke="none" width="12" x="0" y="498"/>
+                <rect fill="url(#gneg)" height="39" stroke="none" width="12" x="0" y="605"/>
+                <rect fill="url(#gpos)" height="104" stroke="none" width="12" x="0" y="644"/>
+                <rect fill="url(#gneg)" height="213" stroke="none" width="12" x="0" y="748"/>
+                <rect fill="url(#gpos)" height="107" stroke="none" width="12" x="0" y="961"/>
+                <rect fill="url(#gneg)" height="178" stroke="none" width="12" x="0" y="1068"/>
+                <rect fill="url(#gpos)" height="72" stroke="none" width="12" x="0" y="1246"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(102,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">7</text>
+          </g>
+          <g transform="translate(0,92.7408),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)">
+              <use xlink:href="url(#ideo_13)"/>
+              <g clip-path="url(#ideo_14)">
+                <rect fill="url(#arm)" height="1264" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gneg)" height="135" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gpos)" height="25" stroke="none" width="12" x="0" y="135"/>
+                <rect fill="url(#gneg)" height="203" stroke="none" width="12" x="0" y="160"/>
+                <rect fill="url(#gpos)" height="99" stroke="none" width="12" x="0" y="363"/>
+                <rect fill="url(#gneg)" height="214" stroke="none" width="12" x="0" y="462"/>
+                <rect fill="url(#gpos)" height="135" stroke="none" width="12" x="0" y="676"/>
+                <rect fill="url(#gneg)" height="25" stroke="none" width="12" x="0" y="811"/>
+                <rect fill="url(#gpos)" height="89" stroke="none" width="12" x="0" y="836"/>
+                <rect fill="url(#gneg)" height="214" stroke="none" width="12" x="0" y="925"/>
+                <rect fill="url(#gpos)" height="64" stroke="none" width="12" x="0" y="1139"/>
+                <rect fill="url(#gneg)" height="61" stroke="none" width="12" x="0" y="1203"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(119,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">8</text>
+          </g>
+          <g transform="translate(0,95.8123),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)">
+              <use xlink:href="url(#ideo_15)"/>
+              <g clip-path="url(#ideo_16)">
+                <rect fill="url(#arm)" height="1228" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gneg)" height="113" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gpos)" height="47" stroke="none" width="12" x="0" y="113"/>
+                <rect fill="url(#gneg)" height="142" stroke="none" width="12" x="0" y="160"/>
+                <rect fill="url(#gpos)" height="82" stroke="none" width="12" x="0" y="302"/>
+                <rect fill="url(#gneg)" height="82" stroke="none" width="12" x="0" y="384"/>
+                <rect fill="url(#gpos)" height="50" stroke="none" width="12" x="0" y="466"/>
+                <rect fill="url(#gneg)" height="267" stroke="none" width="12" x="0" y="516"/>
+                <rect fill="url(#gpos)" height="231" stroke="none" width="12" x="0" y="783"/>
+                <rect fill="url(#gneg)" height="214" stroke="none" width="12" x="0" y="1014"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(136,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">9</text>
+          </g>
+          <g transform="translate(0,101.87),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)">
+              <use xlink:href="url(#ideo_17)"/>
+              <g clip-path="url(#ideo_18)">
+                <rect fill="url(#arm)" height="1157" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gneg)" height="74" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gpos)" height="100" stroke="none" width="12" x="0" y="74"/>
+                <rect fill="url(#gneg)" height="114" stroke="none" width="12" x="0" y="174"/>
+                <rect fill="url(#gpos)" height="139" stroke="none" width="12" x="0" y="288"/>
+                <rect fill="url(#gneg)" height="107" stroke="none" width="12" x="0" y="427"/>
+                <rect fill="url(#gpos)" height="99" stroke="none" width="12" x="0" y="534"/>
+                <rect fill="url(#gneg)" height="82" stroke="none" width="12" x="0" y="633"/>
+                <rect fill="url(#gpos)" height="86" stroke="none" width="12" x="0" y="715"/>
+                <rect fill="url(#gneg)" height="53" stroke="none" width="12" x="0" y="801"/>
+                <rect fill="url(#gpos)" height="64" stroke="none" width="12" x="0" y="854"/>
+                <rect fill="url(#gneg)" height="114" stroke="none" width="12" x="0" y="918"/>
+                <rect fill="url(#gpos)" height="64" stroke="none" width="12" x="0" y="1032"/>
+                <rect fill="url(#gneg)" height="61" stroke="none" width="12" x="0" y="1096"/>
+              </g>
+              <g>
+                <rect fill="lime" class="Integration" height="12.057727272727272" stroke="none" width="12" x="0" y="569.9670176237491"/>
+                <text class="int_txt" fill="black" text-decoration="underline" font-size="12px" transform="translate(0,-1199.0),matrix(1 0 0 11.7208 0 0)" x="-33" y="15" font-weight="bold" >Int.3</text>
+                <text class="int_txt" fill="black" font-size="12px" transform="translate(0,-1199.0),matrix(1 0 0 11.7208 0 0)" x="-33" y="30" >Name: NC_051344.1_56245601</text>
+                <text class="int_txt" fill="black" font-size="12px" transform="translate(0,-1199.0),matrix(1 0 0 11.7208 0 0)" x="-33" y="45" >Chrom: 9</text>
+                <text class="int_txt" fill="black" font-size="12px" transform="translate(0,-1199.0),matrix(1 0 0 11.7208 0 0)" x="-33" y="60" >Contig: NC_051344.1</text>
+                <text class="int_txt" fill="black" font-size="12px" transform="translate(0,-1199.0),matrix(1 0 0 11.7208 0 0)" x="-33" y="75" >Position [bp]: 56245601</text>
+                <text class="int_txt" fill="black" font-size="12px" transform="translate(0,-1199.0),matrix(1 0 0 11.7208 0 0)" x="-33" y="90" >Features: gene (protein_coding)  ankyrin repeat domain 44 Ankrd44</text>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(153,0),matrix(1 0 0 1 1 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(-1,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">10</text>
+          </g>
+          <g transform="translate(0,99.3957),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)">
+              <use xlink:href="url(#ideo_19)"/>
+              <g clip-path="url(#ideo_20)">
+                <rect fill="url(#arm)" height="1186" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gpos)" height="67" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gneg)" height="214" stroke="none" width="12" x="0" y="67"/>
+                <rect fill="url(#gpos)" height="92" stroke="none" width="12" x="0" y="281"/>
+                <rect fill="url(#gneg)" height="136" stroke="none" width="12" x="0" y="373"/>
+                <rect fill="url(#gpos)" height="25" stroke="none" width="12" x="0" y="509"/>
+                <rect fill="url(#gneg)" height="149" stroke="none" width="12" x="0" y="534"/>
+                <rect fill="url(#gpos)" height="29" stroke="none" width="12" x="0" y="683"/>
+                <rect fill="url(#gneg)" height="178" stroke="none" width="12" x="0" y="712"/>
+                <rect fill="url(#gpos)" height="53" stroke="none" width="12" x="0" y="890"/>
+                <rect fill="url(#gneg)" height="168" stroke="none" width="12" x="0" y="943"/>
+                <rect fill="url(#gpos)" height="18" stroke="none" width="12" x="0" y="1111"/>
+                <rect fill="url(#gneg)" height="57" stroke="none" width="12" x="0" y="1129"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(172,0),matrix(1 0 0 1 1 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(-1,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">11</text>
+          </g>
+          <g transform="translate(0,120.725),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)">
+              <use xlink:href="url(#ideo_21)"/>
+              <g clip-path="url(#ideo_22)">
+                <rect fill="url(#arm)" height="160" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gneg)" height="71" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gpos)" height="89" stroke="none" width="12" x="0" y="71"/>
+                <rect fill="url(#arm)" height="776" stroke="none" width="12" x="0" y="160"/>
+                <rect fill="url(#gpos)" height="231" stroke="none" width="12" x="0" y="160"/>
+                <rect fill="url(#gneg)" height="125" stroke="none" width="12" x="0" y="391"/>
+                <rect fill="url(#gpos)" height="177" stroke="none" width="12" x="0" y="516"/>
+                <rect fill="url(#gneg)" height="125" stroke="none" width="12" x="0" y="693"/>
+                <rect fill="url(#gvar)" height="118" stroke="none" width="12" x="0" y="818"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(191,0),matrix(1 0 0 1 1 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(-1,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">12</text>
+          </g>
+          <g transform="translate(0,130.707),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)">
+              <use xlink:href="url(#ideo_23)"/>
+              <g clip-path="url(#ideo_24)">
+                <rect fill="url(#arm)" height="220" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gvar)" height="96" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gneg)" height="124" stroke="none" width="12" x="0" y="96"/>
+                <rect fill="url(#arm)" height="599" stroke="none" width="12" x="0" y="220"/>
+                <rect fill="url(#gvar)" height="107" stroke="none" width="12" x="0" y="220"/>
+                <rect fill="url(#gneg)" height="143" stroke="none" width="12" x="0" y="327"/>
+                <rect fill="url(#gpos)" height="28" stroke="none" width="12" x="0" y="470"/>
+                <rect fill="url(#gneg)" height="71" stroke="none" width="12" x="0" y="498"/>
+                <rect fill="url(#gpos)" height="25" stroke="none" width="12" x="0" y="569"/>
+                <rect fill="url(#gneg)" height="225" stroke="none" width="12" x="0" y="594"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(210,0),matrix(1 0 0 1 1 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(-1,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">13</text>
+          </g>
+          <g transform="translate(0,107.927),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)">
+              <use xlink:href="url(#ideo_25)"/>
+              <g clip-path="url(#ideo_26)">
+                <rect fill="url(#arm)" height="295" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gvar)" height="170" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gneg)" height="54" stroke="none" width="12" x="0" y="170"/>
+                <rect fill="url(#gpos)" height="71" stroke="none" width="12" x="0" y="224"/>
+                <rect fill="url(#arm)" height="791" stroke="none" width="12" x="0" y="295"/>
+                <rect fill="url(#gneg)" height="96" stroke="none" width="12" x="0" y="295"/>
+                <rect fill="url(#gpos)" height="29" stroke="none" width="12" x="0" y="391"/>
+                <rect fill="url(#gneg)" height="124" stroke="none" width="12" x="0" y="420"/>
+                <rect fill="url(#gpos)" height="157" stroke="none" width="12" x="0" y="544"/>
+                <rect fill="url(#gneg)" height="82" stroke="none" width="12" x="0" y="701"/>
+                <rect fill="url(#gpos)" height="28" stroke="none" width="12" x="0" y="783"/>
+                <rect fill="url(#gneg)" height="79" stroke="none" width="12" x="0" y="811"/>
+                <rect fill="url(#gpos)" height="28" stroke="none" width="12" x="0" y="890"/>
+                <rect fill="url(#gneg)" height="114" stroke="none" width="12" x="0" y="918"/>
+                <rect fill="url(#gpos)" height="54" stroke="none" width="12" x="0" y="1032"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(229,0),matrix(1 0 0 1 1 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(-1,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">14</text>
+          </g>
+          <g transform="translate(0,107.33),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)">
+              <use xlink:href="url(#ideo_27)"/>
+              <g clip-path="url(#ideo_28)">
+                <rect fill="url(#arm)" height="480" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gneg)" height="206" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gpos)" height="100" stroke="none" width="12" x="0" y="206"/>
+                <rect fill="url(#gneg)" height="174" stroke="none" width="12" x="0" y="306"/>
+                <rect fill="url(#arm)" height="613" stroke="none" width="12" x="0" y="480"/>
+                <rect fill="url(#gpos)" height="189" stroke="none" width="12" x="0" y="480"/>
+                <rect fill="url(#gneg)" height="256" stroke="none" width="12" x="0" y="669"/>
+                <rect fill="url(#gvar)" height="168" stroke="none" width="12" x="0" y="925"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(248,0),matrix(1 0 0 1 1 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(-1,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">15</text>
+          </g>
+          <g transform="translate(0,113.388),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)">
+              <use xlink:href="url(#ideo_29)"/>
+              <g clip-path="url(#ideo_30)">
+                <rect fill="url(#arm)" height="505" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gneg)" height="135" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gpos)" height="25" stroke="none" width="12" x="0" y="135"/>
+                <rect fill="url(#gneg)" height="135" stroke="none" width="12" x="0" y="160"/>
+                <rect fill="url(#gpos)" height="25" stroke="none" width="12" x="0" y="295"/>
+                <rect fill="url(#gneg)" height="125" stroke="none" width="12" x="0" y="320"/>
+                <rect fill="url(#gpos)" height="60" stroke="none" width="12" x="0" y="445"/>
+                <rect fill="url(#arm)" height="517" stroke="none" width="12" x="0" y="505"/>
+                <rect fill="url(#gpos)" height="57" stroke="none" width="12" x="0" y="505"/>
+                <rect fill="url(#gneg)" height="107" stroke="none" width="12" x="0" y="562"/>
+                <rect fill="url(#gpos)" height="139" stroke="none" width="12" x="0" y="669"/>
+                <rect fill="url(#gneg)" height="46" stroke="none" width="12" x="0" y="808"/>
+                <rect fill="url(#gpos)" height="71" stroke="none" width="12" x="0" y="854"/>
+                <rect fill="url(#gneg)" height="64" stroke="none" width="12" x="0" y="925"/>
+                <rect fill="url(#gpos)" height="33" stroke="none" width="12" x="0" y="989"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(267,0),matrix(1 0 0 1 1 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(-1,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">16</text>
+          </g>
+          <g transform="translate(0,126.186),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)">
+              <use xlink:href="url(#ideo_31)"/>
+              <g clip-path="url(#ideo_32)">
+                <rect fill="url(#arm)" height="409" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gneg)" height="99" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gpos)" height="18" stroke="none" width="12" x="0" y="99"/>
+                <rect fill="url(#gneg)" height="125" stroke="none" width="12" x="0" y="117"/>
+                <rect fill="url(#gpos)" height="42" stroke="none" width="12" x="0" y="242"/>
+                <rect fill="url(#gneg)" height="54" stroke="none" width="12" x="0" y="284"/>
+                <rect fill="url(#gpos)" height="71" stroke="none" width="12" x="0" y="338"/>
+                <rect fill="url(#arm)" height="463" stroke="none" width="12" x="0" y="409"/>
+                <rect fill="url(#gpos)" height="89" stroke="none" width="12" x="0" y="409"/>
+                <rect fill="url(#gneg)" height="71" stroke="none" width="12" x="0" y="498"/>
+                <rect fill="url(#gpos)" height="28" stroke="none" width="12" x="0" y="569"/>
+                <rect fill="url(#gneg)" height="72" stroke="none" width="12" x="0" y="597"/>
+                <rect fill="url(#gpos)" height="25" stroke="none" width="12" x="0" y="669"/>
+                <rect fill="url(#gneg)" height="178" stroke="none" width="12" x="0" y="694"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(286,0),matrix(1 0 0 1 1 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(-1,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">17</text>
+          </g>
+          <g transform="translate(0,124.65),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)">
+              <use xlink:href="url(#ideo_33)"/>
+              <g clip-path="url(#ideo_34)">
+                <rect fill="url(#arm)" height="445" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gneg)" height="210" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gpos)" height="21" stroke="none" width="12" x="0" y="210"/>
+                <rect fill="url(#gneg)" height="160" stroke="none" width="12" x="0" y="231"/>
+                <rect fill="url(#gpos)" height="54" stroke="none" width="12" x="0" y="391"/>
+                <rect fill="url(#arm)" height="445" stroke="none" width="12" x="0" y="445"/>
+                <rect fill="url(#gpos)" height="53" stroke="none" width="12" x="0" y="445"/>
+                <rect fill="url(#gneg)" height="171" stroke="none" width="12" x="0" y="498"/>
+                <rect fill="url(#gpos)" height="25" stroke="none" width="12" x="0" y="669"/>
+                <rect fill="url(#gneg)" height="196" stroke="none" width="12" x="0" y="694"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(305,0),matrix(1 0 0 1 1 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(-1,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">18</text>
+          </g>
+          <g transform="translate(0,133.182),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)">
+              <use xlink:href="url(#ideo_35)"/>
+              <g clip-path="url(#ideo_36)">
+                <rect fill="url(#arm)" height="338" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gpos)" height="96" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gneg)" height="153" stroke="none" width="12" x="0" y="96"/>
+                <rect fill="url(#gpos)" height="89" stroke="none" width="12" x="0" y="249"/>
+                <rect fill="url(#arm)" height="452" stroke="none" width="12" x="0" y="338"/>
+                <rect fill="url(#gpos)" height="124" stroke="none" width="12" x="0" y="338"/>
+                <rect fill="url(#gneg)" height="150" stroke="none" width="12" x="0" y="462"/>
+                <rect fill="url(#gpos)" height="35" stroke="none" width="12" x="0" y="612"/>
+                <rect fill="url(#gneg)" height="103" stroke="none" width="12" x="0" y="647"/>
+                <rect fill="url(#gpos)" height="40" stroke="none" width="12" x="0" y="750"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(324,0),matrix(1 0 0 1 1 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(-1,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">19</text>
+          </g>
+          <g transform="translate(0,134.632),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)">
+              <use xlink:href="url(#ideo_37)"/>
+              <g clip-path="url(#ideo_38)">
+                <rect fill="url(#arm)" height="292" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gpos)" height="53" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gneg)" height="85" stroke="none" width="12" x="0" y="53"/>
+                <rect fill="url(#gpos)" height="22" stroke="none" width="12" x="0" y="138"/>
+                <rect fill="url(#gneg)" height="132" stroke="none" width="12" x="0" y="160"/>
+                <rect fill="url(#arm)" height="481" stroke="none" width="12" x="0" y="292"/>
+                <rect fill="url(#gpos)" height="171" stroke="none" width="12" x="0" y="292"/>
+                <rect fill="url(#gneg)" height="310" stroke="none" width="12" x="0" y="463"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(343,0),matrix(1 0 0 1 1 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(-1,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">20</text>
+          </g>
+          <g transform="translate(0,156.559),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)">
+              <use xlink:href="url(#ideo_39)"/>
+              <g clip-path="url(#ideo_40)">
+                <rect fill="url(#arm)" height="249" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gneg)" height="149" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gpos)" height="100" stroke="none" width="12" x="0" y="149"/>
+                <rect fill="url(#arm)" height="267" stroke="none" width="12" x="0" y="249"/>
+                <rect fill="url(#gneg)" height="106" stroke="none" width="12" x="0" y="249"/>
+                <rect fill="url(#gpos)" height="72" stroke="none" width="12" x="0" y="355"/>
+                <rect fill="url(#gneg)" height="89" stroke="none" width="12" x="0" y="427"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(362,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(2,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">X</text>
+          </g>
+          <g transform="translate(0,94.2766),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)">
+              <use xlink:href="url(#ideo_41)"/>
+              <g clip-path="url(#ideo_42)">
+                <rect fill="url(#arm)" height="1246" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gvar)" height="60" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gneg)" height="107" stroke="none" width="12" x="0" y="60"/>
+                <rect fill="url(#gpos)" height="64" stroke="none" width="12" x="0" y="167"/>
+                <rect fill="url(#gneg)" height="75" stroke="none" width="12" x="0" y="231"/>
+                <rect fill="url(#gpos)" height="156" stroke="none" width="12" x="0" y="306"/>
+                <rect fill="url(#gneg)" height="168" stroke="none" width="12" x="0" y="462"/>
+                <rect fill="url(#gpos)" height="153" stroke="none" width="12" x="0" y="630"/>
+                <rect fill="url(#gneg)" height="89" stroke="none" width="12" x="0" y="783"/>
+                <rect fill="url(#gpos)" height="25" stroke="none" width="12" x="0" y="872"/>
+                <rect fill="url(#gneg)" height="53" stroke="none" width="12" x="0" y="897"/>
+                <rect fill="url(#gpos)" height="100" stroke="none" width="12" x="0" y="950"/>
+                <rect fill="url(#gneg)" height="107" stroke="none" width="12" x="0" y="1050"/>
+                <rect fill="url(#gpos)" height="89" stroke="none" width="12" x="0" y="1157"/>
+              </g>
+              <g>
+                <rect fill="lime" class="Integration" height="12.057727272727272" stroke="none" width="12" x="0" y="579.5110767927755"/>
+                <text class="int_txt" fill="black" text-decoration="underline" font-size="12px" transform="translate(0,-1110.0),matrix(1 0 0 11.7208 0 0)" x="-237" y="15" font-weight="bold" >Int.4</text>
+                <text class="int_txt" fill="black" font-size="12px" transform="translate(0,-1110.0),matrix(1 0 0 11.7208 0 0)" x="-237" y="30" >Name: NC_051356.1_70905762</text>
+                <text class="int_txt" fill="black" font-size="12px" transform="translate(0,-1110.0),matrix(1 0 0 11.7208 0 0)" x="-237" y="45" >Chrom: 21</text>
+                <text class="int_txt" fill="black" font-size="12px" transform="translate(0,-1110.0),matrix(1 0 0 11.7208 0 0)" x="-237" y="60" >Contig: NC_051356.1</text>
+                <text class="int_txt" fill="black" font-size="12px" transform="translate(0,-1110.0),matrix(1 0 0 11.7208 0 0)" x="-237" y="75" >Position [bp]: 70905762</text>
+                <text class="int_txt" fill="black" font-size="12px" transform="translate(0,-1110.0),matrix(1 0 0 11.7208 0 0)" x="-237" y="90" >Features: gene (protein_coding)  ATRX; chromatin remodeler Atrx</text>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(379,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(2,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">Y</text>
+          </g>
+          <g transform="translate(0,139.836),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)">
+              <use xlink:href="url(#ideo_43)"/>
+              <g clip-path="url(#ideo_44)">
+                <rect fill="url(#arm)" height="712" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gpos)" height="534" stroke="none" width="12" x="0" y="0"/>
+                <rect fill="url(#gneg)" height="178" stroke="none" width="12" x="0" y="534"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 0.0853182 0 0)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,108 @@
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+
+name: Python application
+
+on:
+  push:
+    branches: [ "**" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    # runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+          python-version: "3.10"
+          
+    - name: Install conda   
+      uses: conda-incubator/setup-miniconda@v2
+      with: 
+          # auto-update-conda: true
+          python-version: "3.10"
+          auto-activate-base: true
+
+    - name: Install dependencies
+      shell: bash -el {0}
+      run: |
+          conda activate
+          python -m pip install --upgrade pip
+          pip install matplotlib
+          pip install svglib
+          pip install reportlab
+          pip install pillow
+          pip install scipy
+          # pip install gooey
+          pip install pandas
+          conda install -c bioconda blast
+          conda install -c bioconda minimap2
+          # conda install -c bioconda samtools
+          
+    - name: Run intloc standard mode with ava_clust
+      shell: bash -el {0}
+      run: |
+         pwd
+         conda activate
+         conda list
+         python intloc/integration_locator.py --ava_clust -c /home/runner/work/Integration_locator/Integration_locator/intloc/il_test/Test_data/pmaxGFP-N1.fasta -w "Saccharomyces cerevisiae" -f /home/runner/work/Integration_locator/Integration_locator/intloc/il_test/Test_data/SimTestData_yeast_pmaxGFP-N1_intx10_v2_30xCov_P6C4_IntCandReads.fasta -o /home/runner/work/Integration_locator/Integration_locator/intloc/il_test/Test_results --spec yeast --verbosity 1 --cat_log
+
+
+    - name: Run intloc standard mode with read_dir
+      shell: bash -el {0}
+      run: |
+        pwd
+        conda activate
+        conda list
+        python intloc/integration_locator.py -c /home/runner/work/Integration_locator/Integration_locator/intloc/il_test/Test_data/pmaxGFP-N1.fasta -w "Saccharomyces cerevisiae" -d /home/runner/work/Integration_locator/Integration_locator/intloc/il_test/Test_data/read_dir_test -o /home/runner/work/Integration_locator/Integration_locator/intloc/il_test/Test_results --spec yeast --verbosity 1 --cat_log
+
+
+    - name: Run intloc fast mode
+      shell: bash -el {0}
+      run: |
+         pwd
+         conda activate
+         conda list
+         python intloc/integration_locator.py --quick -c /home/runner/work/Integration_locator/Integration_locator/intloc/il_test/Test_data/pmaxGFP-N1.fasta -g /home/runner/work/Integration_locator/Integration_locator/intloc/il_resources/genome_assemblies/GCF_000146045.2_R64/GCF_000146045.2_R64_genomic.fna -f /home/runner/work/Integration_locator/Integration_locator/intloc/il_test/Test_data/SimTestData_yeast_pmaxGFP-N1_intx10_v2_30xCov_P6C4_IntCandReads.fasta -o /home/runner/work/Integration_locator/Integration_locator/intloc/il_test/Test_results --spec yeast --verbosity 1 --cat_log
+
+
+    - name: Run intloc polyclonal mode
+      shell: bash -el {0}
+      run: |
+        pwd
+        conda activate
+        conda list
+        python intloc/integration_locator.py --polyclonal -c /home/runner/work/Integration_locator/Integration_locator/intloc/il_test/Test_data/pmaxGFP-N1.fasta -g /home/runner/work/Integration_locator/Integration_locator/intloc/il_resources/genome_assemblies/GCF_000146045.2_R64/GCF_000146045.2_R64_genomic.fna -f /home/runner/work/Integration_locator/Integration_locator/intloc/il_test/Test_data/SimTestData_yeast_pmaxGFP-N1_intx10_v2_30xCov_P6C4_IntCandReads.fasta -o /home/runner/work/Integration_locator/Integration_locator/intloc/il_test/Test_results --spec yeast --verbosity 1 --cat_log
+
+
+    - name: Run intloc intra mode
+      shell: bash -el {0}
+      run: |
+        pwd
+        conda activate
+        conda list
+        python intloc/integration_locator.py --intra --req_int_cont 90 --min_dist_ints 1000 -c /home/runner/work/Integration_locator/Integration_locator/intloc/il_test/Test_data/hLINE-1_full_UID1_sl.fasta -w "Homo sapiens=GCF_009914755.1_T2T-CHM13v2.0" -f /home/runner/work/Integration_locator/Integration_locator/intloc/il_test/Test_data/Intra_TestData_hLINE1_17new_and_25preex.fasta -o /home/runner/work/Integration_locator/Integration_locator/intloc/il_test/Test_results --spec human --verbosity 1 --cat_log
+
+#         uses: conda-incubator/setup-miniconda@v2
+#         with: 
+#              auto-update-conda: true
+#              python-version: "3.10"
+#              auto-activate-base: true
+        
+        
+        
+#        pip install flake8 pytest
+#        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+#    - name: Lint with flake8
+#      run: |
+#        # stop the build if there are Python syntax errors or undefined names
+#        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+#        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide

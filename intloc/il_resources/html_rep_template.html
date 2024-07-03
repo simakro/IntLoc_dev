@@ -1,0 +1,779 @@
+<!-- Copyright 2022 Simon Magin. 
+Licensed under the BSD-2-clause License (https://opensource.org/licenses/BSD-2-Clause).
+This file may not be copied, modified, or distributed except according to those terms. -->
+
+$preamble$
+<DOCTYPE !html>
+<html lang="en">
+    <head>
+        <title>Intloc html report</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style>
+        h1 {
+            color: rgba(19, 29, 207, 0.952);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 64;
+            font-weight: bold;
+            line-height: 0.6;
+        }
+        h2 {
+            text-align: center;
+            font-size: 48;
+            line-height: 0.6;
+        }
+        h3 {
+            text-align: center;
+            font-size: 30;
+            font-weight: normal;
+            line-height: 0.2;
+        }
+        h4 {
+            color: rgba(19, 29, 207, 0.952);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 28;
+            font-weight: bold;
+            tab-size:30; 
+	        white-space: pre;
+            line-height: 0.1;
+        }
+        h5 {
+            text-align: center;
+            font-weight: normal;
+            font-size: 18;
+            line-height: 0.2;
+        }
+        header {
+            color: rgba(13, 13, 218, 0.952);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 48;
+            font-weight: bold;
+        }
+        .tableFixHead {
+            overflow-y: auto;
+            overflow-x: auto;
+            height: 420px;
+        }
+        .tableFixHead thead th {
+            position: sticky;
+            top: 0;
+        }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+            float: center;
+            border-collapse: collapse;
+            width: auto;
+            max-width: 750;
+        }
+        th,
+        td {
+            padding: 8px 16px;
+            border: 1px solid #ccc;
+        }
+        td.clust_reads {
+            max-width: 450px;
+        }
+        th {
+            background: #eee;
+        }
+        .table_container td tr {
+            border: none !important;
+            border-collapse: collapse !important;
+            border-color: white !important;
+            border-style: none;
+            border-width: 0;
+            border-width: 0vh;
+        }
+        .legend {
+            text-align: left;
+            font-size: 12;
+            line-height: 0.6;
+        }
+        #svg_spec_ideo {
+            margin-left: 38%;
+            margin-right: 25%;
+            display: block;
+        }
+        .placeholder {
+            opacity: 0;
+        }
+        .ideo-container {
+            border-collapse: collapse;
+            border-style: none;
+            transform: scale(1.5);
+        }
+        th.int_th {
+            background-color:  rgba(19, 188, 255, 0.952);
+        }
+        th.feat_th {
+            background-color:  rgba(255, 200, 19, 0.952);
+        }
+        th.clust_th {
+            background-color:  rgba(255, 0, 0, 0.952);
+        }
+        .clust_reads {
+            overflow-x: auto;
+            width: 200px;
+        }
+    </style>
+    <body>
+        <header>
+            <div id="logo">
+                <?xml version="1.0" encoding="utf-8"?>
+                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="160.093px" height="81.226px" viewBox="220.088 384.262 160.093 81.226"
+                    enable-background="new 220.088 384.262 160.093 81.226" xml:space="preserve">
+                <g>
+                    <path fill="#5BC9E1" d="M220.088,435.8v-51.538h10.406V435.8H220.088z"/>
+                    <path fill="#5BC9E1" d="M274.299,435.8h-9.879v-19.053c0-4.031-0.211-6.639-0.633-7.822c-0.422-1.183-1.107-2.104-2.057-2.76
+                        c-0.949-0.656-2.092-0.984-3.428-0.984c-1.711,0-3.247,0.469-4.605,1.406c-1.359,0.938-2.291,2.18-2.795,3.727
+                        c-0.504,1.547-0.756,4.407-0.756,8.578v16.91h-9.879v-37.335h9.176v5.484c3.257-4.219,7.359-6.328,12.305-6.328
+                        c2.18,0,4.171,0.393,5.977,1.178c1.805,0.786,3.169,1.788,4.096,3.006c0.926,1.219,1.57,2.602,1.934,4.148
+                        c0.363,1.547,0.545,3.762,0.545,6.645L274.299,435.8L274.299,435.8z"/>
+                    <path fill="#5BC9E1" d="M301.439,398.465v7.875h-6.75v15.047c0,3.046,0.064,4.821,0.193,5.325c0.128,0.506,0.422,0.92,0.879,1.248
+                        c0.457,0.33,1.014,0.492,1.67,0.492c0.914,0,2.238-0.316,3.973-0.949l0.844,7.664c-2.297,0.984-4.898,1.477-7.805,1.477
+                        c-1.781,0-3.387-0.299-4.816-0.895c-1.43-0.598-2.479-1.371-3.146-2.32s-1.131-2.232-1.389-3.85
+                        c-0.211-1.148-0.316-3.469-0.316-6.961V406.34h-4.535v-7.875h4.535v-7.418l9.914-5.766v13.184H301.439z"/>
+                </g>
+                <g>
+                    <path id="_x3C_Compound_L_x3E__1_" fill="#ED2224" d="M264.336,464.644v-51.116h9.991v42.435h24.842v8.684h-34.833V464.644z"/>
+                    <path fill="#ED2224" d="M304.031,445.449c0-3.281,0.775-6.455,2.328-9.527c1.553-3.07,3.752-5.414,6.6-7.031
+                        c2.848-1.615,6.025-2.426,9.535-2.426c5.424,0,9.867,1.834,13.334,5.502c3.465,3.67,5.197,8.303,5.197,13.904
+                        c0,5.648-1.75,10.33-5.248,14.045c-3.5,3.715-7.904,5.572-13.215,5.572c-3.285,0-6.42-0.773-9.4-2.32
+                        c-2.982-1.547-5.25-3.814-6.803-6.803S304.031,449.738,304.031,445.449z M313.751,445.976c0,3.705,0.844,6.539,2.531,8.51
+                        c1.688,1.969,3.77,2.951,6.246,2.951c2.475,0,4.551-0.982,6.227-2.951c1.676-1.971,2.516-4.828,2.516-8.578
+                        c0-3.656-0.84-6.471-2.516-8.439s-3.752-2.953-6.227-2.953c-2.477,0-4.559,0.984-6.246,2.953S313.751,442.273,313.751,445.976z"/>
+                    <path fill="#ED2224" d="M379.708,438.347l-9.352,1.76c-0.314-1.945-1.029-3.41-2.143-4.396c-1.115-0.984-2.561-1.477-4.338-1.477
+                        c-2.363,0-4.248,0.85-5.654,2.549c-1.406,1.701-2.109,4.541-2.109,8.525c0,4.43,0.715,7.559,2.145,9.387
+                        c1.428,1.828,3.346,2.742,5.754,2.742c1.801,0,3.275-0.533,4.422-1.6c1.148-1.066,1.959-2.9,2.432-5.502l9.316,1.652
+                        c-0.969,4.453-2.824,7.814-5.568,10.09c-2.746,2.271-6.428,3.41-11.039,3.41c-5.242,0-9.422-1.725-12.539-5.168
+                        c-3.117-3.445-4.674-8.215-4.674-14.311c0-6.164,1.563-10.963,4.689-14.395c3.127-3.434,7.359-5.15,12.691-5.15
+                        c4.365,0,7.836,0.979,10.414,2.936C376.732,431.357,378.582,434.339,379.708,438.347z"/>
+                </g>
+                <rect x="264.336" y="436.359" fill="#5BC9E1" width="9.992" height="19.609"/>
+                </svg>
+            </div>
+            <h1>IntLoc Integration Report</h1>
+        </header>
+        <main>
+$mode$
+            <h4>Intloc mode:@#mode@</h4>
+$read_info$
+            <h4>Integration reads:@#Number of reads containing evidence of integration sequence@   Confirmed Integrations:@#Number of confirmed Integrations@</h4>
+            <p class="placeholder">empty paragraph</p>
+$preex_read_info$
+            <h4>Masked a total of @#masked sequences similar to int.-seq.@ sequences in reference with similarity to int-seq</h4>
+            <h4>Preexisting intragenic sites >=@#required int. cont. (ric) [percent of full length]@% of full-length integration in genomic reference:@#Integrations (>=ric) in genomic reference@</h4>
+            <h4>Integration reads:@#Number of reads containing evidence of integration sequence@   Integrations detected by sequencing:@#int sites detected by sequencing@</h4>
+            <h4>Confirmed novel Integrations >=@#required int. cont. (ric) [percent of full length]@% of full-len.:@#Number of novel Integrations@</h4>
+            <h4>Intragenic reference sites:@#confirmed intragenic sites in reference@ confirmed   (@#unsupported intragenic sites in reference@ not supported by reads)</h4>
+            <p class="placeholder">empty paragraph</p>
+$spec_ideo$
+            <h2>Species specific ideogram</h2>
+            <h3>For integration information hover over target integration</h3>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <table class="ideo-container">
+                <tr>
+                <td>            
+                    @insert@all@
+                </td>
+                </tr>
+            </table>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+$novel_spec_ideo$
+            <h2>Novel Integrations identified</h2>
+            <h3>For integration information hover over target integration</h3>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <table class="ideo-container">
+                <tr>
+                <td>            
+                    @insert@all@
+                </td>
+                </tr>
+            </table>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+$generic_ideo$
+            <h2>Generic ideogram</h2>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <table class="ideo-container">
+                <tr>
+                <td>            
+                    @insert@all@
+                </td>
+                </tr>
+            </table>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+$preex_spec_ideo$
+            <h2>Preexisting intragenic integrations in reference</h2>
+            <h3>green: confirmed by seq-reads, blue: not supported by seq-reads</h3>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <table class="ideo-container">
+                <tr>
+                <td>            
+                    @insert@all@
+                </td>
+                </tr>
+            </table>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+$preex_generic_ideo$
+            <h2>Preexisting intragenic integrations ideogram</h2>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <table class="ideo-container">
+                <tr>
+                <td>            
+                    @insert@all@
+                </td>
+                </tr>
+            </table>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+$int_table_head$
+            <h2>Integration table</h2>
+            <table class="table_container">
+                <tbody>
+                    <tr>
+                    <td>
+                        <div class="tableFixHead" width="500">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="int_th">ID</th>
+                                        <!-- <th class="int_th">INT_name</th> -->
+                                        <th class="int_th">Chr/contig</th>
+                                        <th class="int_th">loc</th>
+                                        <th class="int_th">+/-[bp]</th>
+                                        <!-- <th class="int_th">int-rs</th> -->
+                                        <th class="int_th">supp. int. reads</th>
+                                        <th class="int_th">non-int. reads</th>
+                                        <th class="int_th">ts_cov</th>
+                                        <th class="int_th">IMR</th>
+                                        <th class="int_th">SSBR</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+$int_table_data$
+                                    <tr>
+                                        @insert@<td>#</td>@
+                                    </tr>
+$int_table_foot$
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="legend">loc = location/position on chromosome in basepairs</p>
+                            <p class="legend">+/-[bp] = location placement uncertainty in basepairs (rounded SD of alignment edges used to determine insertion location)</p>
+                            <!-- <p class="legend">rs = reads supporting integration (b:BLAST, m:minimap2)</p> -->
+                            <p class="legend">supp. int. reads = reads containing int.-seq. supporting integration at site</p>
+                            <p class="legend">non-int. reads = reads covering genomic location of integration site not containing int.-seq. (e.g. originating from homolog. chrom.)</p>
+                            <p class="legend">ts_cov = total number of reads covering integration site</p>
+                            <p class="legend">IMR = identity match ratio (the average identity of all non-construct sequences in all supporting reads to the integration site)</p>
+                            <p class="legend">SSBR = most similar secondary site bitscore ratio (ratio of summed bitscores of supporting reads aligned to the called int. site or to the next best potential alternative site)</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+$lossgain_table_head$
+            <h2>Potential sequence gains/losses at integration sites</h2>
+            <table class="table_container">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="tableFixHead" width="500">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="int_th">Integration</th>
+                                            <th class="int_th">seq loss [min/median/most_freq](bp)</th>
+                                            <th class="int_th">seq gain left [min/median/most_freq] (bp)</th>
+                                            <th class="int_th">seq gain right [min/median/most_freq] (bp)</th>
+                                            <th class="int_th">confounding factors</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+$lossgain_table_data$
+                                        <tr>
+                                            @insert@<td>#</td>@
+                                        </tr>
+$lossgain_table_foot$
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="legend">seq loss = Total loss of genomic sequence at site of integration</p>
+                            <p class="legend">(minimum, median and most frequent value of all evidence reads)</p>
+                            <p class="legend">seq gain left = Newly acquired sequence on the left of the int.-site in addition to provided integrating sequence</p>
+                            <p class="legend">(minimum, median and most frequent value of all evidence reads)</p>
+                            <p class="legend">seq gain right = Newly acquired sequence on the right of the int.-site in addition to provided integrating sequence</p>
+                            <p class="legend">(minimum, median and most frequent value of all evidence reads)</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+$new_intras_table_head$
+            <h2>Integration table</h2>
+            <table class="table_container">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="tableFixHead" width="500">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="int_th">ID</th>
+                                            <th class="int_th">Chr/contig</th>
+                                            <th class="int_th">loc</th>
+                                            <th class="int_th">supp. int. reads</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+$new_intras_table_data$
+                                        <tr>
+                                            @insert@<td>#</td>@
+                                        </tr>
+$new_intras_table_foot$
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="legend">loc = location/position on chromosome in basepairs</p>
+                            <p class="legend">+/-[bp] = location placement uncertainty in basepairs (rounded SD of alignment edges
+                                used to determine insertion location)</p>
+                            <p class="legend">rs = reads supporting integration (b:BLAST, m:minimap2)</p>
+                            <p class="legend">ts_cov = total number of reads covering integration site</p>
+                            <p class="legend">IMR = identity match ratio (the average identity of all non-construct sequences in all
+                                supporting reads to the integration site)</p>
+                            <p class="legend">SSBR = most similar secondary site bitscore ratio (ratio of summed bitscores of
+                                supporting reads aligned to the called int. site or to the next best potential alternative site)</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+$preex_int_table_head$
+            <h2>Preexisting intragenic integrations table</h2>
+            <table class="table_container">
+                <tbody>
+                    <tr>
+                    <td>
+                        <div class="tableFixHead" width="300">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="int_th">ID</th>
+                                        <th class="int_th">Chr/contig</th>
+                                        <th class="int_th">loc</th>
+                                        <th class="int_th">supp. int. reads</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+$preex_int_table_data$
+                                    <tr>
+                                        @insert@<td>#</td>@
+                                    </tr>
+$preex_int_table_foot$
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="legend">loc = location/position on chromosome in basepairs</p>
+                            <p class="legend">+/-[bp] = location placement uncertainty in basepairs (rounded SD of alignment edges used to determine insertion location)</p>
+                            <p class="legend">rs = reads supporting integration (b:BLAST, m:minimap2)</p>
+                            <p class="legend">ts_cov = total number of reads covering integration site</p>
+                            <p class="legend">IMR = identity match ratio (the average identity of all non-construct sequences in all supporting reads to the integration site)</p>
+                            <p class="legend">SSBR = most similar secondary site bitscore ratio (ratio of summed bitscores of supporting reads aligned to the called int. site or to the next best potential alternative site)</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+$feat_table_head$
+            <h2>Feature table</h2>
+            <table class="table_container">
+                <tbody>
+                    <tr>
+                    <td>
+                        <div class="tableFixHead" width="360">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="feat_th">Integration</th>
+                                        <th class="feat_th">genomic features</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+$feat_table_data$
+                                    <tr>
+                                        @insert@<td>#</td>@
+                                    </tr>
+$feat_table_foot$                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+$preex_feat_table_head$
+            <h2>Preexisting intragenic sites feature table</h2>
+            <table class="table_container">
+                <tbody>
+                    <tr>
+                    <td>
+                        <div class="tableFixHead" width="360">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="feat_th">Integration</th>
+                                        <th class="feat_th">genomic features</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+$preex_feat_table_data$
+                                    <tr>
+                                        @insert@<td>#</td>@
+                                    </tr>
+$preex_feat_table_foot$                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+$multisite_table_head$
+            <h2>Linked and multimeric integration sites</h2>
+            <h3>Integrations confirmed to lie on the same molecule by reads covering multiple sites or mulitmeric integrations</h3>
+            <table class="table_container">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="tableFixHead" width="360">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="feat_th">site</th>
+                                            <th class="feat_th">linked cis-sites</th>
+                                            <th class="feat_th">linking-reads</th>
+                                            <th class="feat_th">multimer-reads</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+$multisite_table_data$
+                                        <tr>
+                                            @insert@<td>#</td>@
+                                        </tr>
+$multisite_table_foot$
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="legend">linked cis-sites = separate independent integrations linked via reads covering both sites</p>
+                            <p class="legend">linking-reads = count of linking evidence reads</p>
+                            <p class="legend">multimer-reads = reads containing evidence of multimeric/concatemeric integration sequence</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+$proxtrans_table_head$
+<h2>Proximal integration sites in trans</h2>
+<h3>Integration sites mapping to the same reference contig, but can be excluded to be located on the same molecule</h3>
+            <table class="table_container">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="tableFixHead" width="360">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="feat_th">site</th>
+                                            <th class="feat_th">confirmed trans-sites</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+$proxtrans_table_data$
+                                        <tr>
+                                            @insert@<td>#</td>@
+                                        </tr>
+$proxtrans_table_foot$
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+            <p class="placeholder">empty paragraph</p>
+$clust_fig$
+            <h2>Read clustering</h2>
+            <table class="clust-container">
+                <tr>
+                <td>
+                    @insert@all@
+                </td>
+                </tr>
+        </table>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+$clust_table_head$
+        <h2>Read cluster table</h2>
+        <table class="table_container">
+            <tbody>
+                <tr>
+                <td>
+                    <div class="tableFixHead" >
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="clust_th">Cluster</th>
+                                    <th class="clust_th">#reads</th>
+                                    <th class="clust_th">read_names</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+$clust_table_data$
+                                <tr>
+                                    @insert@<td>#</td>@
+                                </tr>
+$clust_table_foot$
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+                </tr>
+            </tbody>
+        </table>
+        </table>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+$info_table_head$
+        <h2>Run Information table</h2>
+        <table class="table_container">
+            <tbody>
+                <tr>
+                <td>
+                    <div class="tableFixHead" >
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="info_th">Category</th>
+                                    <th class="info_th">run info</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+$info_table_data$
+                                <tr>
+                                    @insert@<td>#</td>@
+                                </tr>
+$info_table_foot$
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+                </tr>
+            </tbody>
+        </table>
+$single_ideo_head$
+        <h2>Single ideo selection</h2>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <table class="ideo-container">
+          <tbody>
+              <tr>
+              <td>
+              <div class="tableFixHead" >
+                <table class="select_display">
+                  <thead>
+                    <tr>
+                        <select name="single_ideo" id="ideo_select" onchange="document.getElementById('curr_ideo').src = this.value">
+$single_ideo_data$
+                            @insert@<option value="path">#</option>@    
+$single_ideo_foot$
+                        </select>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img src="@" id="curr_ideo">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              </td>
+              </tr>
+          </tbody>
+        </table>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+$cand_read_maps_blast_head$
+        <h2>Integration read mappings BLAST</h2>
+        <h3>Reads containing integration sequence aligned to reference (blast) for evaluation</h3>
+        <h5>Split alignments spanning the whole integration are shown in the same row with the second part colored in light
+            green.</h5>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <table class="ideo-container">
+            <tbody>
+                <tr>
+                <td>
+                <div class="tableFixHead">
+                    <table class="select_display">
+                        <thead>
+                          <tr>
+                        <select name="cand_read_maps_blast" id="maps_select_blast" onchange="document.getElementById('curr_blast_map').src = this.value">
+$cand_read_maps_blast_data$
+                            @insert@<option value="path">#</option>@
+$cand_read_maps_blast_foot$
+                        </select>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <iframe src="@" id="curr_blast_map" height="360" width="640"></iframe>
+                            </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+$cand_read_maps_mm2_head$
+        <h2>Integration read mappings minimap2</h2>
+        <h3>Reads containing integration sequence aligned to reference (minimap2) for evaluation</h3>
+        <h5>Split alignments spanning the whole integration are shown in the same row with the second part colored in light green.</h5>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <table class="ideo-container">
+          <tbody>
+              <tr>
+              <td>
+              <div class="tableFixHead" >
+                <table class="select_display">
+                  <thead>
+                    <tr>
+                        <select name="cand_read_maps_mm2" id="maps_select_mm2" onchange="document.getElementById('curr_mm2_map').src = this.value">
+$cand_read_maps_mm2_data$
+                            @insert@<option value="path">#</option>@    
+$cand_read_maps_mm2_foot$
+                        </select>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <iframe src="@" id="curr_mm2_map" height="360" width="640"></iframe>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              </td>
+              </tr>
+          </tbody>
+        </table>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+        <p class="placeholder">empty paragraph</p>
+$html_foot$
+        </main>
+    </body>
+</html>
+$end§

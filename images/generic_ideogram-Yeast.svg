@@ -1,0 +1,46 @@
+<?xml version = "1.0" ?>
+<svg width="840" height="600" dpi="72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect x="0" y="0" fill="#FFFFFF" stroke="#000000" stroke-width="3" width="840" height="600"/>
+<text x="410.4733174551014" y="47.03125" font-size="25.0" >NC_001136.10</text>
+<line stroke="#BDBDBD" stroke-width="25.0" x1="20" y1="34.53125" x2="390.4733174551014" y2="34.53125" stroke-linecap="round"/>
+<line fill="none" stroke="#ff0000" stroke-width="2" x1="183.13098554302198" y1="22.03125" x2="183.13098554302198" y2="47.03125"/>
+<text x="303.911148254457" y="81.5625" font-size="25.0" >NC_001147.6</text>
+<line stroke="#BDBDBD" stroke-width="25.0" x1="20" y1="69.0625" x2="283.911148254457" y2="69.0625" stroke-linecap="round"/>
+<line fill="none" stroke="#ff0000" stroke-width="2" x1="21.535645205005633" y1="56.5625" x2="21.535645205005633" y2="81.5625"/>
+<text x="303.82626455887316" y="116.09375" font-size="25.0" >NC_001139.9</text>
+<line stroke="#BDBDBD" stroke-width="25.0" x1="20" y1="103.59375" x2="283.82626455887316" y2="103.59375" stroke-linecap="round"/>
+<line fill="none" stroke="#ff0000" stroke-width="2" x1="51.34699256114017" y1="91.09375" x2="51.34699256114017" y2="116.09375"/>
+<text x="300.73973861375714" y="150.625" font-size="25.0" >NC_001144.5</text>
+<line stroke="#BDBDBD" stroke-width="25.0" x1="20" y1="138.125" x2="280.73973861375714" y2="138.125" stroke-linecap="round"/>
+<line fill="none" stroke="#ff0000" stroke-width="2" x1="64.08244890539319" y1="125.625" x2="64.08244890539319" y2="150.625"/>
+<text x="269.274489280137" y="185.15625" font-size="25.0" >NC_001148.4</text>
+<line stroke="#BDBDBD" stroke-width="25.0" x1="20" y1="172.65625" x2="249.27448928013698" y2="172.65625" stroke-linecap="round"/>
+<text x="263.5587452769389" y="219.6875" font-size="25.0" >NC_001145.3</text>
+<line stroke="#BDBDBD" stroke-width="25.0" x1="20" y1="207.1875" x2="243.5587452769389" y2="207.1875" stroke-linecap="round"/>
+<text x="236.65545045469293" y="254.21875" font-size="25.0" >NC_001134.8</text>
+<line stroke="#BDBDBD" stroke-width="25.0" x1="20" y1="241.71875" x2="216.65545045469293" y2="241.71875" stroke-linecap="round"/>
+<line fill="none" stroke="#ff0000" stroke-width="2" x1="175.9647218642925" y1="229.21875" x2="175.9647218642925" y2="254.21875"/>
+<text x="229.67830087837524" y="288.75" font-size="25.0" >NC_001146.8</text>
+<line stroke="#BDBDBD" stroke-width="25.0" x1="20" y1="276.25" x2="209.67830087837524" y2="276.25" stroke-linecap="round"/>
+<line fill="none" stroke="#ff0000" stroke-width="2" x1="67.20476626631094" y1="263.75" x2="67.20476626631094" y2="288.75"/>
+<text x="220.34786571309533" y="323.28125" font-size="25.0" >NC_001142.9</text>
+<line stroke="#BDBDBD" stroke-width="25.0" x1="20" y1="310.78125" x2="200.34786571309533" y2="310.78125" stroke-linecap="round"/>
+<line fill="none" stroke="#ff0000" stroke-width="2" x1="189.3683652481409" y1="298.28125" x2="189.3683652481409" y2="323.28125"/>
+<text x="201.25870756236787" y="357.8125" font-size="25.0" >NC_001143.9</text>
+<line stroke="#BDBDBD" stroke-width="25.0" x1="20" y1="345.3125" x2="181.25870756236787" y2="345.3125" stroke-linecap="round"/>
+<text x="179.50768377833373" y="392.34375" font-size="25.0" >NC_001137.3</text>
+<line stroke="#BDBDBD" stroke-width="25.0" x1="20" y1="379.84375" x2="159.50768377833373" y2="379.84375" stroke-linecap="round"/>
+<text x="176.06614568188726" y="426.875" font-size="25.0" >NC_001140.6</text>
+<line stroke="#BDBDBD" stroke-width="25.0" x1="20" y1="414.375" x2="156.06614568188726" y2="414.375" stroke-linecap="round"/>
+<text x="146.3798264471681" y="461.40625" font-size="25.0" >NC_001141.2</text>
+<line stroke="#BDBDBD" stroke-width="25.0" x1="20" y1="448.90625" x2="126.37982644716813" y2="448.90625" stroke-linecap="round"/>
+<text x="116.5694464265958" y="495.9375" font-size="25.0" >NC_001135.5</text>
+<line stroke="#BDBDBD" stroke-width="25.0" x1="20" y1="483.4375" x2="96.5694464265958" y2="483.4375" stroke-linecap="round"/>
+<line fill="none" stroke="#ff0000" stroke-width="2" x1="45.41117971753966" y1="470.9375" x2="45.41117971753966" y2="495.9375"/>
+<line fill="none" stroke="#ff0000" stroke-width="2" x1="61.86265562401575" y1="470.9375" x2="61.86265562401575" y2="495.9375"/>
+<text x="105.33408570543727" y="530.46875" font-size="25.0" >NC_001138.5</text>
+<line stroke="#BDBDBD" stroke-width="25.0" x1="20" y1="517.96875" x2="85.33408570543727" y2="517.96875" stroke-linecap="round"/>
+<line fill="none" stroke="#ff0000" stroke-width="2" x1="73.33066054788537" y1="505.46875" x2="73.33066054788537" y2="530.46875"/>
+<text x="95.67451461511601" y="565.0" font-size="25.0" >NC_001133.9</text>
+<line stroke="#BDBDBD" stroke-width="25.0" x1="20" y1="552.5" x2="75.67451461511601" y2="552.5" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<svg height="296" version="1.1" width="207" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <desc>Ideogram SVG</desc>
+  <defs>
+    <clipPath id="ideo_2">
+      <path id="ideo_1" d="M0.000000,5770251.000000 C0.000000,2885125.500000 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,2885125.500000 12.000000,5770251.000000 L12.000000,455849888.000000 C12.000000,458735008.000000 9.000000,461620128.000000 6.000000 461620128.000000 C3.000000,461620128.000000 0.000000,458735008.000000 0.000000,455849888.000000 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <linearGradient id="arm">
+      <stop offset="0" stop-color="rgb(108,108,108)" stop-opacity="1"/>
+      <stop offset="0.125" stop-color="rgb(199,199,199)" stop-opacity="1"/>
+      <stop offset="0.625" stop-color="rgb(144,144,144)" stop-opacity="1"/>
+      <stop offset="1" stop-color="rgb(108,108,108)" stop-opacity="1"/>
+    </linearGradient>
+    <clipPath id="ideo_4">
+      <path id="ideo_3" d="M0.000000,5770251.000000 C0.000000,2885125.500000 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,2885125.500000 12.000000,5770251.000000 L12.000000,277057280.000000 C12.000000,279942400.000000 9.000000,282827520.000000 6.000000 282827520.000000 C3.000000,282827520.000000 0.000000,279942400.000000 0.000000,277057280.000000 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_6">
+      <path id="ideo_5" d="M0.000000,5770251.000000 C0.000000,2885125.500000 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,2885125.500000 12.000000,5770251.000000 L12.000000,225327616.000000 C12.000000,228212752.000000 9.000000,231097872.000000 6.000000 231097872.000000 C3.000000,231097872.000000 0.000000,228212752.000000 0.000000,225327616.000000 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_8">
+      <path id="ideo_7" d="M0.000000,5770251.000000 C0.000000,2885125.500000 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,2885125.500000 12.000000,5770251.000000 L12.000000,187999760.000000 C12.000000,190884896.000000 9.000000,193770016.000000 6.000000 193770016.000000 C3.000000,193770016.000000 0.000000,190884896.000000 0.000000,187999760.000000 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_10">
+      <path id="ideo_9" d="M0.000000,5770251.000000 C0.000000,2885125.500000 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,2885125.500000 12.000000,5770251.000000 L12.000000,149841616.000000 C12.000000,152726752.000000 9.000000,155611872.000000 6.000000 155611872.000000 C3.000000,155611872.000000 0.000000,152726752.000000 0.000000,149841616.000000 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_12">
+      <path id="ideo_11" d="M0.000000,5770251.000000 C0.000000,2885125.500000 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,2885125.500000 12.000000,5770251.000000 L12.000000,128588808.000000 C12.000000,131473928.000000 9.000000,134359056.000000 6.000000 134359056.000000 C3.000000,134359056.000000 0.000000,131473928.000000 0.000000,128588808.000000 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_14">
+      <path id="ideo_13" d="M0.000000,5770251.000000 C0.000000,2885125.500000 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,2885125.500000 12.000000,5770251.000000 L12.000000,93784216.000000 C12.000000,96669336.000000 9.000000,99554464.000000 6.000000 99554464.000000 C3.000000,99554464.000000 0.000000,96669336.000000 0.000000,93784216.000000 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_16">
+      <path id="ideo_15" d="M0.000000,5770251.000000 C0.000000,2885125.500000 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,2885125.500000 12.000000,5770251.000000 L12.000000,22735580.000000 C12.000000,25620704.000000 9.000000,28505830.000000 6.000000 28505830.000000 C3.000000,28505830.000000 0.000000,25620704.000000 0.000000,22735580.000000 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_18">
+      <path id="ideo_17" d="M0.000000,5770251.000000 C0.000000,2885125.500000 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,2885125.500000 12.000000,5770251.000000 L12.000000,26788104.000000 C12.000000,29673230.000000 9.000000,32558356.000000 6.000000 32558356.000000 C3.000000,32558356.000000 0.000000,29673230.000000 0.000000,26788104.000000 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+    <clipPath id="ideo_20">
+      <path id="ideo_19" d="M0.000000,5770251.000000 C0.000000,2885125.500000 3.000000,0.000000 6.000000,0.000000 C9.000000,0.000000 12.000000,2885125.500000 12.000000,5770251.000000 L12.000000,121485184.000000 C12.000000,124370304.000000 9.000000,127255432.000000 6.000000 127255432.000000 C3.000000,127255432.000000 0.000000,124370304.000000 0.000000,121485184.000000 Z" fill="rgb(240,240,255)" stroke="rgb(0,0,0)" stroke-width="1.000px"/>
+    </clipPath>
+  </defs>
+  <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+    <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+      <g transform="translate(20,20),matrix(1 0 0 1 0 16)">
+        <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">2</text>
+          </g>
+          <g transform="translate(0,0),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 5.19908e-07 0 0)">
+              <use xlink:href="url(#ideo_1)"/>
+              <g clip-path="url(#ideo_2)">
+                <rect fill="url(#arm)" height="4.6162e+08" stroke="none" width="12" x="0" y="0"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 5.19908e-07 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(17,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">3</text>
+          </g>
+          <g transform="translate(0,92.9557),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 5.19908e-07 0 0)">
+              <use xlink:href="url(#ideo_3)"/>
+              <g clip-path="url(#ideo_4)">
+                <rect fill="url(#arm)" height="2.82828e+08" stroke="none" width="12" x="0" y="0"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 5.19908e-07 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(34,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">4</text>
+          </g>
+          <g transform="translate(0,119.85),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 5.19908e-07 0 0)">
+              <use xlink:href="url(#ideo_5)"/>
+              <g clip-path="url(#ideo_6)">
+                <rect fill="url(#arm)" height="2.31098e+08" stroke="none" width="12" x="0" y="0"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 5.19908e-07 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(51,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(2,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">5</text>
+          </g>
+          <g transform="translate(0,139.257),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 5.19908e-07 0 0)">
+              <use xlink:href="url(#ideo_7)"/>
+              <g clip-path="url(#ideo_8)">
+                <rect fill="url(#arm)" height="1.9377e+08" stroke="none" width="12" x="0" y="0"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 5.19908e-07 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(68,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">6</text>
+          </g>
+          <g transform="translate(0,159.096),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 5.19908e-07 0 0)">
+              <use xlink:href="url(#ideo_9)"/>
+              <g clip-path="url(#ideo_10)">
+                <rect fill="url(#arm)" height="1.55612e+08" stroke="none" width="12" x="0" y="0"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 5.19908e-07 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(85,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">7</text>
+          </g>
+          <g transform="translate(0,170.146),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 5.19908e-07 0 0)">
+              <use xlink:href="url(#ideo_11)"/>
+              <g clip-path="url(#ideo_12)">
+                <rect fill="url(#arm)" height="1.34359e+08" stroke="none" width="12" x="0" y="0"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 5.19908e-07 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(102,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">8</text>
+          </g>
+          <g transform="translate(0,188.241),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 5.19908e-07 0 0)">
+              <use xlink:href="url(#ideo_13)"/>
+              <g clip-path="url(#ideo_14)">
+                <rect fill="url(#arm)" height="9.95545e+07" stroke="none" width="12" x="0" y="0"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 5.19908e-07 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(119,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(3,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">9</text>
+          </g>
+          <g transform="translate(0,225.18),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 5.19908e-07 0 0)">
+              <use xlink:href="url(#ideo_15)"/>
+              <g clip-path="url(#ideo_16)">
+                <rect fill="url(#arm)" height="2.85058e+07" stroke="none" width="12" x="0" y="0"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 5.19908e-07 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(136,0),matrix(1 0 0 1 1 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(-1,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">10</text>
+          </g>
+          <g transform="translate(0,223.073),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 5.19908e-07 0 0)">
+              <use xlink:href="url(#ideo_17)"/>
+              <g clip-path="url(#ideo_18)">
+                <rect fill="url(#arm)" height="3.25584e+07" stroke="none" width="12" x="0" y="0"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 5.19908e-07 0 0)"/>
+          </g>
+        </g>
+        <g transform="translate(155,0),matrix(1 0 0 1 0 0)">
+          <g fill="rgb(32,32,32)" fill-opacity="1" transform="translate(2,-16),matrix(1 0 0 1 0 0)">
+            <text font-family="Courier" font-size="12.000000px" transform="matrix(1 0 0 1 0 8)" x="0" y="0">X</text>
+          </g>
+          <g transform="translate(0,173.839),matrix(1 0 0 1 0 0)">
+            <g transform="translate(0,0),matrix(1 0 0 5.19908e-07 0 0)">
+              <use xlink:href="url(#ideo_19)"/>
+              <g clip-path="url(#ideo_20)">
+                <rect fill="url(#arm)" height="1.27255e+08" stroke="none" width="12" x="0" y="0"/>
+              </g>
+            </g>
+            <g transform="translate(0,0),matrix(1 0 0 5.19908e-07 0 0)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

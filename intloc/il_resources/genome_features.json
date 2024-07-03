@@ -1,0 +1,11 @@
+{
+    "Homo sapiens": "GCF_000001405.39_GRCh38.p13_feature_table_slim.txt.gz",
+    "Mus musculus": "GCF_000001635.27_GRCm39_feature_table_slim.txt.gz",
+    "Saccharomyces cerevisiae": "GCF_000146045.2_R64_feature_table_slim.txt.gz",
+    "Arabidopsis thaliana": "GCF_000001735.4_TAIR10.1_feature_table_slim.txt.gz",
+    "Rattus norvegicus": "GCF_015227675.2_mRatBN7.2_feature_table_slim.txt.gz",
+    "Drosophila melanogaster": "GCF_000001215.4_Release_6_plus_ISO1_MT_feature_table_slim.txt.gz",
+    "Danio rerio": "GCF_000002035.6_GRCz11_feature_table_slim.txt.gz",
+    "Escherichia coli": "",
+    "Caenorhabditis elegans": "GCF_000002985.6_WBcel235_feature_table_slim.txt.gz"
+ }
