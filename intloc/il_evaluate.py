@@ -2,26 +2,6 @@
 # Licensed under the BSD-2-clause License (https://opensource.org/licenses/BSD-2-Clause).
 # This file may not be copied, modified, or distributed except according to those terms.
 
-"""
- This module evaluates the probability for other potential integration sites to
- exist in the genome. This is achieved by copying the sequences around the already
- identified integration sites, which are covered by evidence reads, and using them
- as query against the reference. The first hit will be the sequence itself, and
- the second best hit is the one to compare against. Theoretically, the self hit 
- could be prevented by cropping the primary int-site from the reference instead
- of just copying it, but this strategy would fail, in cases where there are one or
- more highly identical sequences to the real integration site and the reads would
- likely be be distributed more or less equally between these different sites during
- mapping. Then, when generating the cropped/masked sequence, all the other potential 
- candidates would be cropped as well, because they co-exist as primary identified 
- int-sites. This would lead to all other misleading candidates to be removed and 
- thus defeat the purpose, because it would especially happen if there are very similar
- potential integration sites.
- Intloc offer a number of metrics: percentage of integration site covered by reads
- (sum qcovhsp/qcovus); edit distance/identity; read coverage (RE); 
- bitscore/evalues (cumulative or similar); alternative integration sites 
-"""
-
 import os
 import sys
 import json
@@ -1245,91 +1225,10 @@ def write_loss_gain_reports(prim_isite_objs):
                     )
     if not entries:
         os.remove("seq_gain_loss_at_intsites.csv")
-    
 
-def run_il_evaluate(
-    outdir: str,
-    ref_genome: str,
-    prim_isite_objs: list,
-    cand_read_objs: list,
-    rtr_alnms: list,
-    all_reads: str,
-    intlen: int,
-    thr: int,
-    args
-    ):
-    """Execution of evaluation functions"""
-    ilog.verbosity = args.verbosity
-    ilog.vlprint("Starting integration-site evaluation module", 5)
-    report_time("evaluation module")
-    alignments = load_alignments(outdir)
-    site_objs = read_out_spanned_regions(alignments, prim_isite_objs)
-    if not args.no_multi_ints:
-        ilog.vlprint("Analyzing multi-int reads", 1)
-        site_objs, piso_by_chrom = mult_ind_int_read_info(
-            prim_isite_objs, site_objs, cand_read_objs, rtr_alnms, args
-            )
-    else:
-        piso_by_chrom = defaultdict(dict)
-        for site in prim_isite_objs:
-            piso_by_chrom[site.chrom][site.approx_loc] = site
-        
-    mmap_eval_primary(ref_genome, outdir, piso_by_chrom, args)
-    spanned_seqs = get_spanned_seqs(site_objs, ref_genome)
-    simil_search_res = search_similar_refgen(spanned_seqs, ref_genome, args)
-    prim_isite_objs, mm2_fp_pis_objs = mmap_ava_comp_primary(
-                                                        outdir,
-                                                        site_objs,
-                                                        prim_isite_objs,
-                                                        args
-                                                        )
-    ilog.vlprint(
-    f"{len(mm2_fp_pis_objs)} potential integration site candidate/s"
-    f" was/were determined to be false positives due to extensive overlap"
-    f" and similarity.", 1
-    )
-    site_objs = filt_similar_seqs(site_objs, simil_search_res)
-    check_similar_regions(site_objs)
-    sec_site_objs = create_alt_reg_objs(site_objs, ref_genome)
-    blast_cand_reads_vs_sec_site_reg(sec_site_objs, args)
-    chk_cr_vs_ssr_success(prim_isite_objs)
-    compare_prim_to_sec(sec_site_objs, prim_isite_objs)
-    ilog.vlprint(
-        f"{len(prim_isite_objs)} integration sites have been confirmed "
-        f"after evaluation.", 1
-        )
-    try:
-        mmap_total_cov_primsite(all_reads, prim_isite_objs, args) # site_objs, 
-    except Exception as e:
-        ilog.vlprint(e, 2)
-        ilog.vlprint(
-            f"WARNING: Determination of total coverage at in-sites failed.", 2
-            )
-    confirm_non_int_reads(prim_isite_objs, all_reads, args)
-    try:
-        mmap_for_splitreads(outdir, prim_isite_objs, intlen, args)
-        il_map_figs.gen_map_figs(prim_isite_objs, aligner="minimap2")
-    except Exception as e:
-        ilog.vlprint(e, 2)
-        ilog.vlprint(
-            f"WARNING: Creation of figs for candidate-read mappings failed.", 2
-            )
-    if not args.no_multi_ints:
-        write_multi_reports(piso_by_chrom)
-    try:
-        write_loss_gain_reports(prim_isite_objs)
-    except:
-        ilog.vlprint(
-            "Report for seq. loss/gain at int. sites could not be generated", 1
-            )
-
-    report_time("Evaluation module", end=True)
-    return prim_isite_objs
-    
 
 if __name__ == "__main__":
     outdir = sys.argv[1]
     ref_genome = sys.argv[2]
     pickled_primary_intsites = sys.argv[3]
-    # run_il_evaluate(outdir, ref_genome, pickled_primary_intsites)
   
