@@ -5,7 +5,7 @@
 """
  This module evaluates the probability for other potential integration sites to
  exist in the genome. This is achieved by copying the sequences around the already
- identified integration sites, which are copied by evidence reads, and using them
+ identified integration sites, which are covered by evidence reads, and using them
  as query against the reference. The first hit will be the sequence itself, and
  the second best hit is the one to compare against. Theoretically, the self hit 
  could be prevented by cropping the primary int-site from the reference instead
