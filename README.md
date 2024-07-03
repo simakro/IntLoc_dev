@@ -4,8 +4,8 @@
 # Integration_locator
 Integration_locator a python package for the detection of sequence integrations 
 in genomes with long-read sequencing data.\
-:warning:!This is a non-functional preview branch!:warning:\
-The fully functional version will soon be release.
+:warning:This is a non-functional preview branch:warning:\
+The fully functional version will be released soon.
 
 ## Table of Contents
 - [About IntLoc](#intro)
